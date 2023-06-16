@@ -12,7 +12,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Nav />}>
+          <Route path="/chaunies.io/" element={<Nav />}>
             <Route index element={<Home />} />
             <Route path="order" element={<Order />} />
             <Route path="services" element={<Services />} />
