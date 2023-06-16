@@ -14,27 +14,27 @@ const Nav = () => {
             />
             <ul className="links-container">
               <li className="nav-links">
-                <Link className="links" to="/chaunies.io/">
+                <Link className="links" to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-links">
-                <Link className="links" to="chaunies.io/order">
+                <Link className="links" to="/order">
                   Place An Order
                 </Link>
               </li>
               <li className="nav-links">
-                <Link className="links" to="chaunies.io/services">
+                <Link className="links" to="/services">
                   Services
                 </Link>
               </li>
               <li className="nav-links">
-                <Link className="links" to="chaunies.io/about">
+                <Link className="links" to="/about">
                   About Us
                 </Link>
               </li>
               <li className="nav-links">
-                <Link className="links" to="chaunies.io/contact">
+                <Link className="links" to="/contact">
                   Contact Us
                 </Link>
               </li>

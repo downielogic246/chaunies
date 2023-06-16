@@ -12,12 +12,12 @@ const App = () => {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/chaunies.io/" element={<Nav />}>
+          <Route path="/" element={<Nav />}>
             <Route index element={<Home />} />
-            <Route path="chaunies.io/order" element={<Order />} />
-            <Route path="chaunies.io/services" element={<Services />} />
-            <Route path="chaunies.io/about" element={<About />} />
-            <Route path="chaunies.io/contact" element={<Contact />} />
+            <Route path="order" element={<Order />} />
+            <Route path="services" element={<Services />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>
       </BrowserRouter>
