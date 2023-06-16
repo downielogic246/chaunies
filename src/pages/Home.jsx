@@ -66,8 +66,7 @@ const Home = () => {
           <div
             className="greeting-image"
             style={{
-              backgroundImage:
-                "url(https://mardanca.github.io/chaunies.io/Photos/ingredients.jpeg)",
+              backgroundImage: "url(/Photos/ingredients.jpeg)",
             }}
           ></div>
         </div>

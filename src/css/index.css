@@ -38,7 +38,7 @@
 
 /* BODY */
 body {
-    background-image: url(../../Photos/chaunies_logo.jpg);
+    background-image: url(/Photos/chaunies_logo.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-attachment: fixed;

@@ -87,7 +87,7 @@ select {
     grid-template-areas: "special special"
     "auto auto";
     grid-template-rows: 10% 90%;
-    background-image: url(Photos/background_order.jpg);
+    background-image: url(/Photos/background_order.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }

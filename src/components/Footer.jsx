@@ -7,11 +7,7 @@ const Footer = () => {
         Copyright &copy;2023. All rights reserved.
       </article>
       <footer>
-        <img
-          src="../../Photos/logoImg.png"
-          alt="logo"
-          className="footer-logo"
-        />
+        <img src="/Photos/logoImg.png" alt="logo" className="footer-logo" />
         <nav>
           <ul className="footer-linksContainer">
             <div className="half-link">
