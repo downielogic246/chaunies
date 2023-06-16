@@ -1,6 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
+import { useRef, useEffect } from "react";
 
 const Nav = () => {
+  const homeRef = useRef();
+
+  useEffect(() => {
+    homeRef.current.click();
+  }, []);
+
   return (
     <>
       <header>
@@ -9,7 +16,7 @@ const Nav = () => {
             <div id="logo" title="Chaunies246"></div>
             <ul className="links-container">
               <li className="nav-links">
-                <Link className="links" to="/chaunies.io/">
+                <Link className="links" to="/chaunies.io/" ref={homeRef}>
                   Home
                 </Link>
               </li>

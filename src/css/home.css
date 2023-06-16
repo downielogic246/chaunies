@@ -36,7 +36,7 @@
 .greeting-image{
     grid-area: image;
     background-size: cover;
-    background-image: url(/Photos/ingredients.jpeg),
+    background-image: url(/Photos/ingredients.jpeg);
 }
 .greeting-heading h1 {
     font-size: 8rem;
