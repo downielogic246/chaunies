@@ -1,0 +1,86 @@
+.main-area {
+    background-color: var(--firstSection-background-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    font-size: 3rem;
+    color: white;
+    grid-area: title;
+    width: 100%;
+    font-family: 'Lobster', cursive;
+}
+
+.ceo-name {
+    text-transform: capitalize;
+    font-style: italic;
+    font-weight: lighter;
+    padding: 20px 0;
+}
+
+.roles{
+    font-size: 2.5rem;
+}
+
+#ceo{
+    background-image: url(Photos/ceo.jpeg);
+    background-size: cover;
+    width: 200px;
+    height: 245px;
+    border-radius: 10px;
+}
+
+.leadership{
+    grid-area: ceo;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;height: max-content;
+}
+
+.about-container {
+    color: white;
+    width: 100%;
+    height: var(--main-height);
+    display: grid;
+    grid-template-areas: 'title title'
+    'ceo write-up';
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 85%;
+    text-transform: capitalize;
+    background-color: var(--firstSection-background-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.mission{
+    padding: 0;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    text-transform: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.about{
+    grid-area: write-up;
+}
+
+.about-desc{
+padding: 10px;
+font-size: 1.25rem;
+text-transform: none;
+}
+
+.mission-container{
+    margin-top: -50px;
+}

@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --nav-height: 12vh;
+    --main-height: 88vh;
+    --themeColor-background-image: linear-gradient(to right, rgb(255, 190, 69), red);
+    --firstSection-background-color: rgba(26, 25, 25, 0.705);
+}
+
+
+/* Main content area */
+.main-area {
+    display: block;
+    width: 100%;
+    max-width: 100vw;
+    height: max-content;
+    position: relative;
+}
+
+
+
+.other-area{
+    width: 100%;
+    height: 100vh;
+    background: var(--themeColor-background-image);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/* BODY */
+body {
+    background-image: url(../../Photos/chaunies_logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* POP UP */
+.button-container {
+    background-color: rgba(37, 37, 37, 0.768);
+    position: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.buttonHolder {
+    background-image: var(--themeColor-background-image);
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 22.5vw;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.buttonHolder h1,
+article,
+p {
+    padding: 5%;
+}
+
+button {
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: none;
+    border: 1.5px solid black;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: capitalize;
+}
+
+.no-show {
+    display: none;
+}

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lobster&family=Pacifico&family=Roboto+Slab:wght@800&display=swap');
+footer{
+ background-color: #ffec4e;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ padding: 10px 0 10% 0;
+}
+
+.footer-logo{
+    padding-top: 30px;
+}
+
+.footer-linksContainer{
+    padding-top: 30px;
+    display: flex;
+    width: max-content;
+    justify-content: space-around;
+}
+
+.footer-links{
+    padding: 10px 20px;
+    list-style: none;
+}
+
+.footer-link{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:'Roboto Slab',
+        serif;
+}
+
+.copyright{
+    width: 100%;
+    height: max-content;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 20px;
+}

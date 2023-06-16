@@ -1,0 +1,151 @@
+
+
+.form-container {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    width: 80vw;
+    padding: 50px;
+    background-color: transparent;
+}
+
+fieldset {
+    border-radius: 5px;
+    width: 60vw;
+    height: fit-content;
+}
+
+input {
+    margin: 20px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background: none;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+legend {
+    font-size: 40px;
+    padding: 50px 100px;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+}
+
+#deliveryMode,#pickup-date {
+    font-size: 20px;
+    padding: 25px;
+}
+
+select {
+    padding: 10px;
+    margin: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    background-image: var(--themeColor-background-image);
+}
+
+#address {
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: 2px solid white;
+    margin: 20px;
+    height: fit-content;
+    display: none;
+}
+
+.order-container {
+    color: white;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: var(--firstSection-background-color);
+}
+
+#check {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin: 15px;
+    border: none;
+    background-image: var(--themeColor-background-image);
+}
+
+.items-container {
+    border: 1px solid white;
+    width: 75vw;
+    display: grid;
+    grid-template-areas: "special special"
+    "auto auto";
+    grid-template-rows: 10% 90%;
+    background-image: url(Photos/background_order.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.item {
+    text-align: center;
+    grid-area: "auto";
+    padding: 20px;
+}
+
+.itemPhoto {
+    width: 300px;
+    height: 250px;
+    max-width: 300px !important;
+    max-height: 250px !important;
+    border-radius: 5px;
+}
+
+.price {
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* .desc {
+    letter-spacing: 1px;
+    width: 100%;
+    margin-top: 20px;
+    font-family: "Noto";
+} */
+
+[id*="quantity-"] {
+    width: 75px;
+}
+
+.itemName {
+    margin: 10px;
+    text-transform: capitalize;
+    font-family: "Copperplate Gothic Light";
+}
+.special-order{
+    width: 100%;
+    grid-area: special;
+}
+
+.special-order article{
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.special-order article::before{
+    content: "*";
+}
+
+.special-order article::before, .special-order {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
