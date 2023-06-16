@@ -65,7 +65,10 @@ const Home = () => {
           </div>
           <div
             className="greeting-image"
-            style={{ backgroundImage: "url(../../Photos/ingredients.jpeg)" }}
+            style={{
+              backgroundImage:
+                "url(https://mardanca.github.io/chaunies.io/Photos/ingredients.jpeg)",
+            }}
           ></div>
         </div>
       </section>

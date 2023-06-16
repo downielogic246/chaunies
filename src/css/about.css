@@ -33,7 +33,7 @@
 }
 
 #ceo{
-    background-image: url(Photos/ceo.jpeg);
+    background-image: url(/Photos/ceo.jpeg);
     background-size: cover;
     width: 200px;
     height: 245px;

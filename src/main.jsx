@@ -12,6 +12,14 @@ import "./css/cheese.css";
 import "./css/footer.css";
 import "./css/services.css";
 
+// window.addEventListener("DOMContentLoaded", () => {
+//   if (localStorage.getItem("246")) {
+//     window.location.href = "https://mardanca.github.io/chaunies.io/";
+//   } else {
+//     localStorage.setItem("246", true);
+//   }
+// });
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <App />
