@@ -63,12 +63,7 @@ const Home = () => {
             <h1>chaunie's</h1>
             <h2>deliciously smooth</h2>
           </div>
-          <div
-            className="greeting-image"
-            style={{
-              backgroundImage: "url(/Photos/ingredients.jpeg)",
-            }}
-          ></div>
+          <div className="greeting-image"></div>
         </div>
       </section>
       <section className="other-area">
