@@ -15,6 +15,7 @@ header {
     max-width: 100%;
     height: var(--nav-height);
     justify-content: center;
+    align-items: center;
 }
 
 /* Navigation Links Styling */
@@ -51,9 +52,18 @@ header {
 }
 
 #logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/Photos/chaunies_nav.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     position: relative;
-    padding-left: 40px;
-    padding-right: 40px;
+    width: 150px;
+    height: 30px;
+    
+    /* height: fit-content; */
+    /* height: max-content; */
 }
 
 .links:hover {

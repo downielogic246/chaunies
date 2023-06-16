@@ -13,10 +13,8 @@ import "./css/footer.css";
 import "./css/services.css";
 
 window.addEventListener("DOMContentLoaded", () => {
-  if (localStorage.getItem("246")) {
+  if (window.location.href !== "https://mardanca.github.io/chaunies.io/") {
     window.location.href = "https://mardanca.github.io/chaunies.io/";
-  } else {
-    localStorage.setItem("246", true);
   }
 });
 

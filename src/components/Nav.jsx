@@ -6,12 +6,7 @@ const Nav = () => {
       <header>
         <nav>
           <div className="header-container">
-            <img
-              src="/Photos/chanie's.png"
-              alt="chanies logo"
-              id="logo"
-              title="Chaunies246"
-            />
+            <div id="logo" title="Chaunies246"></div>
             <ul className="links-container">
               <li className="nav-links">
                 <Link className="links" to="/chaunies.io/">
