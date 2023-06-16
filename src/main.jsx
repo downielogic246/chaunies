@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+// import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./css/home.css";
 import "./css/index.css";
@@ -11,6 +12,7 @@ import "./css/contact.css";
 import "./css/cheese.css";
 import "./css/footer.css";
 import "./css/services.css";
+import { BrowserRouter } from "react-router-dom";
 
 // window.onload(() => {
 //   if (window.location.href != "http://localhost:5173/chaunies.io/")
@@ -19,6 +21,8 @@ import "./css/services.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

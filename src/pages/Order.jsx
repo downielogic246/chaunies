@@ -34,8 +34,6 @@ const Order = () => {
 
   return (
     <>
-      <Cheese />
-      <TopBtn />
       {/* <!-- Main Area --> */}
       <section className="main-area">
         <div className="order-container">
@@ -152,7 +150,6 @@ const Order = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

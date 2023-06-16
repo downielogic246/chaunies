@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 const Contact = () => {
   return (
     <>
-      <Cheese />
       <section className="contact-container">
         <div className="socialMedia-container">
           <ul className="socialMedia">
@@ -42,7 +41,6 @@ const Contact = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

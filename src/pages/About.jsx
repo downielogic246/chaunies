@@ -6,8 +6,6 @@ import Footer from "../components/Footer";
 const About = () => {
   return (
     <>
-      <Cheese />
-      <TopBtn />
       <section className="main-area">
         <div className="about-container">
           <h1 className="about-title">about us</h1>
@@ -36,7 +34,6 @@ const About = () => {
           </div>
         </div>
       </section>
-      <Footer />
     </>
   );
 };

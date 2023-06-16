@@ -4,9 +4,16 @@ import { useRef, useEffect } from "react";
 const Nav = () => {
   const homeRef = useRef();
 
-  useEffect(() => {
-    homeRef.current.click();
-  }, []);
+  // useEffect(() => {
+  //   homeRef.current.click();
+  // }, []);
+
+  // window.addEventListener("beforeunload", () => {
+  //   // (e || window.event).returnValue = null;
+  //   // return homeRef.current.click();
+
+  //   return (location.href = "localhost:5173/chaunies.io/");
+  // });
 
   return (
     <>

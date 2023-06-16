@@ -6,8 +6,6 @@ import Footer from "../components/Footer";
 const Services = () => {
   return (
     <>
-      <Cheese />
-      <TopBtn />
       {/* <!-- Main Area --> */}
       <div className="main-area">
         {/* <!-- Services Message --> */}
@@ -73,7 +71,6 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
