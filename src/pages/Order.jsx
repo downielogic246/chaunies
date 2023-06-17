@@ -37,6 +37,7 @@ const Order = () => {
       {/* <!-- Main Area --> */}
       <section className="main-area">
         <div className="order-container">
+          <h1 className="order-title">Order Now</h1>
           <div className="form-container">
             {/* <!-- Form --> */}
             <form action="https://formspree.io/f/mnqyevyz" method="POST">

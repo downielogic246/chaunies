@@ -1,7 +1,4 @@
 import React from "react";
-import TopBtn from "../components/TopBtn";
-import Cheese from "../components/Designs/Cheese";
-import Footer from "../components/Footer";
 
 const Services = () => {
   return (
@@ -34,11 +31,8 @@ const Services = () => {
         </section>
 
         {/* <!-- Services --> */}
-        <div id="wedding" className="service-1">
-          <div
-            className="title"
-            style={{ backgroundImage: "url(/Photos/wedding.jpg)" }}
-          >
+        <div className="service-1">
+          <div className="title" id="wedding">
             <h1>Weddings</h1>
           </div>
           <div className="desc">
@@ -48,22 +42,16 @@ const Services = () => {
             </p>
           </div>
         </div>
-        <div id="parties" className="service-2">
+        <div className="service-2">
           <div className="desc">
             <p>We also cater to parties, making partying cheesy.</p>
           </div>
-          <div
-            className="title"
-            style={{ backgroundImage: "url(/Photos/party.jpg)" }}
-          >
+          <div className="title" id="parties">
             <h1>Parties</h1>
           </div>
         </div>
-        <div id="corporate_events" className="service-3">
-          <div
-            className="title"
-            style={{ backgroundImage: "url(/Photos/corporate_events.jpg)" }}
-          >
+        <div className="service-3">
+          <div className="title" id="corporate_events">
             <h1>Corporate Events</h1>
           </div>
           <div className="desc">
