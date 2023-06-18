@@ -6,15 +6,7 @@ const Services = () => {
   const party = useRef();
   const corporate_events = useRef();
 
-  // window.addEventListener("scroll", () => {
-  //   let win_bottom = window.scrollY + window.innerHeight;
-  //   // if ( scrollY )
-  //   // console.log(window.getBoundingClientRect().bottom);
-  //   if (win_bottom > wedding.current.getBoundingClientRect().top) {
-  //     wedding.current.classList.add("slideInR");
-  //     // console.log(wedding.current.classList);
-  //   }
-  // });
+  // ~
 
   return (
     <>

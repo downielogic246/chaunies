@@ -24,7 +24,7 @@ const Home = () => {
   }, [show]);
 
   window.addEventListener("scroll", () => {
-    setAnimateHome(scrollY < 100 ? null : "flyIn");
+    setAnimateHome(scrollY < 100 ? null : "showFade flyIn");
   });
 
   return (
