@@ -1,11 +1,12 @@
 import React, { useRef, useState, useEffect } from "react";
-import TopBtn from "../components/TopBtn";
-import Footer from "../components/Footer";
-import Cheese from "../components/Designs/Cheese";
+import { Link, useActionData } from "react-router-dom";
+import OrderBtn from "../components/OrderBtn";
 
 const Home = () => {
   const welcome = useRef();
   const mainArea = useRef();
+
+  const [animateHome, setAnimateHome] = useState("qualities-container");
 
   const [show, setShow] = useState(() => {
     const value = localStorage.getItem("show");
@@ -22,7 +23,9 @@ const Home = () => {
     localStorage.setItem("show", show);
   }, [show]);
 
-  console.log(show);
+  window.addEventListener("scroll", () => {
+    setAnimateHome(scrollY < 100 ? null : "flyIn");
+  });
 
   return (
     <>
@@ -43,14 +46,14 @@ const Home = () => {
             today!
           </article>
           <p>Click here to see our services</p>
-          <a
+          <Link
             className="toServices"
             title="Services"
-            href="chauniesServices.html"
+            to="/chaunies.io/services"
             onClick={() => handleClick()}
           >
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
-          </a>
+          </Link>
         </div>
       </div>
       {/* <!-- Main Content --> */}
@@ -61,11 +64,13 @@ const Home = () => {
             <h1>chaunie's</h1>
             <h2>deliciously smooth</h2>
           </div>
-          <div className="greeting-image"></div>
+          <div className="greeting-image">
+            <OrderBtn />
+          </div>
         </div>
       </section>
       <section className="other-area">
-        <div className="qualities-container">
+        <div className={"qualities-container " + animateHome}>
           <div className="quality">
             <h3 className="third-heading">Delivery</h3>
             <i className="fa-solid fa-truck"></i>
@@ -82,7 +87,7 @@ const Home = () => {
             <article> Chaunie's touch</article>
           </div>
         </div>
-        <article className="chaunies-desc">
+        <article className={"chaunies-desc " + animateHome}>
           At Chaunie's our customers come first. We look out for you and your
           interest. Our customers are always right!
         </article>

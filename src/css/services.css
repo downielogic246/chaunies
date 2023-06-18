@@ -86,3 +86,9 @@
             background-image: url(/Photos/party.jpg);
         }
 
+/* 
+
+.slideInRT{
+    animation: slideInRightText 2s cubic-bezier(0.19, 1, 0.22, 1) 1;
+    animation;
+} */

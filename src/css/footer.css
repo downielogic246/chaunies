@@ -35,6 +35,10 @@ footer{
         serif;
 }
 
+.footer-link:hover{
+    color: orangered;
+}
+
 .copyright{
     width: 100%;
     height: max-content;

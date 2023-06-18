@@ -1,0 +1,60 @@
+@keyframes zoomFont {
+    from{
+        font-size: 3rem;
+    }
+    to{
+        font-size: 4rem;
+    }
+}
+
+.orderbtn-container{
+    width: max-content;
+    padding: 5px 20px;
+    height: max-content;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center ;
+    background: rgb(255, 239, 0);
+        background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(253, 251, 50, 1) 50%, rgba(254, 255, 122, 1) 100%);
+    color: black;
+    box-shadow: 0 0 2px rgba(254, 255, 122, 1);
+    position: relative;
+    bottom: 25%;
+    transition: box-shadow 3s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.orderbtn{
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Oi', cursive;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color: black;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    /* tra */
+}
+
+.orderbtn:hover, .orderbtn-container i:hover{
+    font-size: 3.5rem;
+    color: rgba(33, 33, 33, 0.623);
+}
+
+.orderbtn-container:hover{
+    box-shadow: 0 0 10px rgba(254, 255, 122, 1);
+}
+
+.orderbtn-container i{
+    padding: 20px;
+    font-size: 3rem;
+}
+
+/* .zoom-animation{
+   
+} */

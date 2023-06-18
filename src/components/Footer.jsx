@@ -1,6 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 const Footer = () => {
+  const handleLinkClick = () => {
+    scrollTo(0, 0);
+  };
   return (
     <>
       <article className="copyright">
@@ -12,29 +15,59 @@ const Footer = () => {
           <ul className="footer-linksContainer">
             <div className="half-link">
               <li className="footer-links">
-                <Link className="footer-link" to="/chaunies.io/">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
+                  to="/chaunies.io/"
+                >
                   Home
                 </Link>
               </li>
               <li className="footer-links">
-                <Link className="footer-link" to="/chaunies.io/order">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
+                  to="/chaunies.io/order"
+                >
                   Place An Order
                 </Link>
               </li>
               <li className="footer-links">
-                <Link className="footer-link" to="/chaunies.io/services">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
+                  to="/chaunies.io/services"
+                >
                   Services
                 </Link>
               </li>
             </div>
             <div className="half-link">
               <li className="footer-links">
-                <Link className="footer-link" to="/chaunies.io/about">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
+                  to="/chaunies.io/about"
+                >
                   About
                 </Link>
               </li>
               <li className="footer-links">
-                <Link className="footer-link" to="/chaunies.io/contact">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
+                  to="/chaunies.io/contact"
+                >
                   Contact Us
                 </Link>
               </li>

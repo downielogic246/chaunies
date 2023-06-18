@@ -1,6 +1,21 @@
 import React from "react";
+import { useRef } from "react";
 
 const Services = () => {
+  const wedding = useRef();
+  const party = useRef();
+  const corporate_events = useRef();
+
+  // window.addEventListener("scroll", () => {
+  //   let win_bottom = window.scrollY + window.innerHeight;
+  //   // if ( scrollY )
+  //   // console.log(window.getBoundingClientRect().bottom);
+  //   if (win_bottom > wedding.current.getBoundingClientRect().top) {
+  //     wedding.current.classList.add("slideInR");
+  //     // console.log(wedding.current.classList);
+  //   }
+  // });
+
   return (
     <>
       {/* <!-- Main Area --> */}
@@ -31,7 +46,7 @@ const Services = () => {
         </section>
 
         {/* <!-- Services --> */}
-        <div className="service-1">
+        <div className="service-1" ref={wedding}>
           <div className="title" id="wedding">
             <h1>Weddings</h1>
           </div>
@@ -46,12 +61,12 @@ const Services = () => {
           <div className="desc">
             <p>We also cater to parties, making partying cheesy.</p>
           </div>
-          <div className="title" id="parties">
+          <div className="title" id="parties" ref={party}>
             <h1>Parties</h1>
           </div>
         </div>
         <div className="service-3">
-          <div className="title" id="corporate_events">
+          <div className="title" id="corporate_events" ref={corporate_events}>
             <h1>Corporate Events</h1>
           </div>
           <div className="desc">
