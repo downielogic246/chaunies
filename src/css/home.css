@@ -81,6 +81,8 @@
     /* transform: translateY(100px) */
 }
 .quality{
+    /* transform: translateY(100px); */
+    /* opacity: 0; */
     background-color: white;color: #ffbe45;
     display: flex;
     flex-direction: column;
@@ -144,6 +146,9 @@
         .greeting-heading h1,.greeting-heading h2 {
             text-align: center;
         }
+        .greeting-heading h2 {
+            padding-bottom: 5px;
+        }
         
         .quality {
             width: 175px;
@@ -188,6 +193,15 @@
         .greeting-heading{
             justify-content: center;
             align-items: center;
+        }
+
+        @media (max-width: 400px){
+            .greeting-heading h1{
+                font-size: 3rem;
+            }
+            .greeting-heading h2{
+                font-size: 1.5rem;
+            }
         }
     }
 /* } */

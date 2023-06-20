@@ -1,10 +1,17 @@
 import React from "react";
 
 const Cheese = () => {
+  // const [showCheese, setShowCheese] = useState("block");
+
+  // window.addEventListener('scroll', () => {
+  //   if (scrollY )
+  // })
   return (
     <div
       className="cheese-area"
-      // style={{ marginTop: (-1 * mainArea.current.clientHeight) / 5.5 }}
+      style={{
+        display: "block",
+      }}
     ></div>
   );
 };

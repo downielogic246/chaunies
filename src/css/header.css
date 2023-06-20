@@ -9,6 +9,14 @@ header {
     box-shadow: 0px 0px 1.75px black;
 }
 
+.big-head{
+    display: block;
+}
+
+.small-head{
+    display: none;
+}
+
 .header-container {
     display: flex;
     position: relative;
@@ -102,9 +110,9 @@ header {
 .socials-container {
     display: none;
     position: absolute;
-    bottom: 0;
+    bottom: 50px;
     width: 100%;
-    right: 0;
+    /* right: 0; */
 }
 
 .socials {
@@ -145,6 +153,13 @@ header {
 
 @media (orientation: portrait){
     @media (max-width:1111px) {
+        .big-head{
+            display: none;
+        }
+
+        .small-head{
+            display: block;
+        }
         .menubtn-container{
             display: flex;
         }
@@ -192,6 +207,13 @@ header {
 }
 @media (orientation: landscape){
     @media (max-width:1111px) {
+        .big-head {
+                display: none;
+            }
+        
+            .small-head {
+                display: block;
+            }
         .menubtn-container{
             display: flex;
         }

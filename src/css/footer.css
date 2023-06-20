@@ -5,23 +5,60 @@ footer{
  display: flex;
  flex-direction: row;
  justify-content: space-around;
- padding: 10px 0 10% 0;
+ padding-bottom: 130px;
 }
 
 .footer-logo{
-    padding-top: 30px;
+    margin-top: 30px;
     background-image: url(/Photos/logoImg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     width: 335px;
-    height: 202px;
+    height: 201px;
 }
 
 .footer-linksContainer{
     padding-top: 30px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 'one two'
+    'social social';
     width: max-content;
+    justify-content: center;
+}
+
+.one{
+    grid-area: one;
+}
+
+.two{
+    grid-area: two;
+}
+
+.footer-socials{
+    grid-area: social;
+    justify-self: center;
+            display: flex;
+            width: 50%;
+            height: 100%;
+            justify-content: space-evenly;
+            align-items: center;
+}
+
+.footer-social{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    width: 100%;
+    height: max-content;
+    align-items: center;
     justify-content: space-around;
 }
 
+.footer-social li a{
+    color: orangered;
+    font-size: 2.5rem;
+}
 .footer-links{
     padding: 10px 20px;
     list-style: none;
@@ -49,3 +86,43 @@ footer{
     font-weight: bold;
     font-size: 20px;
 }
+
+/* @media (orientation: landscape) { */
+    @media (max-width: 826px){
+        footer{
+            align-items: center;
+            justify-content: center;
+            flex-direction: column-reverse;
+        }
+        .footer-logo{
+            display: none;
+        }
+
+        footer nav{
+            position: relative;
+            width: 100%;
+        }
+
+        .footer-linksContainer {
+            width: 100%;
+            justify-content: 
+            space-evenly;
+            text-align: center;
+        }
+
+        .copyright{
+            font-size: 1rem;
+        }
+
+    }
+
+    @media (max-width: 490px){
+        .footer-link{
+            font-size: 1.5rem;
+        }
+        footer{
+            padding-bottom: 90px
+        }
+    }
+    
+/* } */
