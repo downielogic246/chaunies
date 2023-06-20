@@ -11,7 +11,7 @@ const OrderBtn = () => {
   return (
     <div className="orderbtn-container fa-beat-fade">
       <Link to="/chaunies.io/order" className="orderbtn ">
-        order now <i className="fa-regular fa-hand-pointer"></i>
+        order now
       </Link>
     </div>
   );

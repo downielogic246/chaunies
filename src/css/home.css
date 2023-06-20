@@ -58,48 +58,6 @@
 
 }
 
-/* floating social links Styling */
-.socials-container {
-    position: fixed;
-    z-index: 2;
-    bottom: 10px;
-    right: 20px
-}
-
-.socials{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    column-gap: 50px;
-}
-
-.socials-container li {
-    position: relative;
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* padding: 25%; */
-}
-
-.socials-container li a:hover {
-    font-size: 35px;
-}
-
-.socials-container li a {
-    background-color: white;
-    font-size: 30px;
-    color: #ffbe45;
-    padding: 75%;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    border-radius: 100%;
-}
-
 
 
 .qualities-container{
@@ -110,9 +68,6 @@
     /* background-color: white; */
     width: 70%;
     height: 300px;
-    /* transform: translateY(100px) */
-    
-    
 }
 .other-area {
     justify-content: center;
@@ -137,6 +92,14 @@
     border: 3px outset green;
     font-size: 2rem;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.24);
+    transition: all 2s cubic-bezier(0.74, -0.72, 0, 3.07);
+}
+
+.quality:hover{
+    font-size: 3rem;
+    width: 300px;
+    height: 300px;
+    border: 5px inset red;
 }
 
 .quality article{
@@ -160,3 +123,71 @@
 .flyIn{
     animation: flyInFromDown 3s cubic-bezier(0.215, 0.610, 0.355, 1) 0s forwards;
 }
+
+.heading-why{
+    font-family: 'Lobster', cursive;
+    font-size: 4rem;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-style: italic;
+}
+
+/* @media (orientation: landscape){ */
+    @media (max-width:1004px) {
+        .greeting-container{
+            grid-template-areas: "image"
+            'title';
+            grid-template-columns: 100%;
+            grid-template-rows: 30% 70%;
+        }
+        
+        .greeting-heading h1,.greeting-heading h2 {
+            text-align: center;
+        }
+        
+        .quality {
+            width: 175px;
+            height: 175px;
+        }
+
+        .quality:hover {
+            width: 200px;
+            height: 200px;
+            border: 5px inset red;
+            font-size: 2rem;
+        }
+                
+        .quality article {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .qualities-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            /* background-color: white; */
+            width: 100%;
+            height: max-content;
+            padding: 30px;
+            row-gap: 30px;
+        }
+
+        .chaunies-desc{
+            font-size: 1.5rem;
+        }
+        
+        .greeting-heading h1{
+            font-size: 5rem;
+        }
+        
+        .greeting-heading h2{
+            font-size: 2rem;
+        }
+        .greeting-heading{
+            justify-content: center;
+            align-items: center;
+        }
+    }
+/* } */

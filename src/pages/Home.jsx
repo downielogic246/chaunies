@@ -70,6 +70,7 @@ const Home = () => {
         </div>
       </section>
       <section className="other-area">
+        <div className="heading-why">why us?</div>
         <div className={"qualities-container " + animateHome}>
           <div className="quality">
             <h3 className="third-heading">Delivery</h3>

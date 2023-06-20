@@ -54,3 +54,32 @@
     padding: 20px;
     font-size: 3rem;
 }
+
+/* @media (orientation: landscape) { */
+    @media (max-width:1238px) {
+        .orderbtn{
+            font-size: 2rem;
+            padding: 15px;
+        }
+    }
+    @media (max-width: 1004px){
+        .orderbtn-container{
+            height: max-content;
+            padding: 8px;
+        }
+    }
+    /* @media (max-width:979px) {
+        .orderbtn-container{
+             padding: 2px;
+        }
+    } */
+    @media (max-width:865px) {
+        /* .orderbtn-container{
+            padding: 0;
+        } */
+        .orderbtn{
+            font-size: 1.75rem;
+            padding: 10px;
+        }
+    }
+/* } */

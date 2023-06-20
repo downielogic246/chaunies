@@ -92,3 +92,12 @@ button {
 .no-show {
     display: none;
 }
+
+/* @media (orientation: landscape) { */
+    @media (max-width: 1004px){
+    .other-area {
+            height: max-content;
+        }
+    }
+    
+/* } */
