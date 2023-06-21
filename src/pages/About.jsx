@@ -22,7 +22,7 @@ const About = () => {
             </div>
             <article className="about-desc">
               Chaunie's is a small barbadian business that was established in
-              ..., and owned by a diligent female. Since then, Chaunie's has
+              2018, and owned by a diligent female. Since then, Chaunie's has
               been operating as one of Barbados' catering services, with special
               orders for events and their standard 6oz and 18oz cheesepaste.
               Finally, Chaunie's cheesepaste is known for its 'deliciously
