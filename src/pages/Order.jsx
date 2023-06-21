@@ -42,7 +42,7 @@ const Order = () => {
             <article>
               Welcome to Chaunie's Order Form. Kindly fill out the section below
               to place orders for the 16oz and the 8oz cheesepaste. <br />{" "}
-              Special orders can be made via email, chaunie246@outlook.com or
+              Special orders can be made via email, chaunies246@outlook.com or
               phonecall, +1 (246) 838-3455
             </article>
           </div>
