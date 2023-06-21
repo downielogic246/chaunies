@@ -4,7 +4,7 @@ header {
     position: relative;
     width: 100vw;
     max-width: 100%;
-    height: var(--nav-height);
+    height: 70px;
     background-image: var(--themeColor-background-image);
     box-shadow: 0px 0px 1.75px black;
 }

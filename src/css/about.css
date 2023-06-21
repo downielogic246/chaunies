@@ -51,7 +51,7 @@
 .about-container {
     color: white;
     width: 100%;
-    height: var(--main-height);
+    height: max-content;
     display: grid;
     grid-template-areas: 'title title'
     'ceo write-up';
