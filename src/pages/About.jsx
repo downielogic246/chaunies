@@ -1,7 +1,4 @@
 import React from "react";
-import TopBtn from "../components/TopBtn";
-import Cheese from "../components/Designs/Cheese";
-import Footer from "../components/Footer";
 
 const About = () => {
   return (

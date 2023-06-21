@@ -1,5 +1,4 @@
 import React from "react";
-import { useRef } from "react";
 
 const services = [
   {
@@ -20,12 +19,6 @@ const services = [
 ];
 
 const Services = () => {
-  const wedding = useRef();
-  const party = useRef();
-  const corporate_events = useRef();
-
-  // ~
-
   return (
     <>
       {/* <!-- Main Area --> */}

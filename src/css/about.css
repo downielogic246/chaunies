@@ -84,3 +84,26 @@ text-transform: none;
 .mission-container{
     margin-top: -50px;
 }
+@media (max-width: 734px){
+    .about-container{
+        grid-template-areas: 'title'
+        'write-up'
+        'ceo'
+        ;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content max-content max-content;
+        height: max-content;
+    }
+
+    .roles{
+        padding: 0;
+    }
+
+    .about{
+        padding-top: 60px;
+    }
+
+    .leadership{
+        padding-bottom: 20px;
+    }
+}
