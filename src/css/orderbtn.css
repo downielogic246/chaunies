@@ -64,8 +64,9 @@
     }
     @media (max-width: 1004px){
         .orderbtn-container{
-            height: max-content;
+            height: 90%;
             padding: 8px;
+            bottom: 0;
         }
     }
     /* @media (max-width:979px) {

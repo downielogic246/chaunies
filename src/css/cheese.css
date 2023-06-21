@@ -3,7 +3,7 @@
     background-image: url(../../Photos/cheese.png);
     background-size: contain;
     z-index: 1;
-    bottom: -25%;
+    top: 90%;
     /* background-position: right; */
     /* background-position: ; */
     width: 100%;

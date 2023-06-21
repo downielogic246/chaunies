@@ -38,6 +38,14 @@ const Order = () => {
       <section className="main-area">
         <div className="order-container">
           <h1 className="order-title">Order Now</h1>
+          <div className="special-order">
+            <article>
+              Welcome to Chaunie's Order Form. Kindly fill out the section below
+              to place orders for the 16oz and the 8oz cheesepaste. <br />{" "}
+              Special orders can be made via email, chaunie246@outlook.com or
+              phonecall, +1 (246) 838-3455
+            </article>
+          </div>
           <div className="form-container">
             {/* <!-- Form --> */}
             <form action="https://formspree.io/f/mnqyevyz" method="POST">
@@ -108,11 +116,6 @@ const Order = () => {
               <fieldset id="orderInfo">
                 <legend title="Order Information">Order Information</legend>
                 <div className="items-container">
-                  <div className="special-order">
-                    <article>
-                      Special order can be made via email or phonecall
-                    </article>
-                  </div>
                   {items.map((item) => {
                     return (
                       <div className="item" key={item.id}>

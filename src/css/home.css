@@ -13,6 +13,8 @@
     color: white;
     text-align: center;
     text-transform: capitalize;
+    background-image: url(/Photos/ingredients.jpeg);
+    background-size: cover;
 }
 
 .greeting-heading{
@@ -29,7 +31,7 @@
     text-align: left;
     word-spacing: 2px;
     letter-spacing: 3px;
-    color:  red;
+    color: #fbe765;
     font-family: 'Allura', cursive;
 }
 
@@ -37,7 +39,7 @@
     height: 100%;
     grid-area: image;
     background-size: cover;
-    background-image: url(/Photos/ingredients.jpeg);
+    /* background-image: url(/Photos/ingredients.jpeg); */
     display: flex;
     justify-content: center;
     align-items: end;
@@ -140,7 +142,7 @@
             grid-template-areas: "image"
             'title';
             grid-template-columns: 100%;
-            grid-template-rows: 30% 70%;
+            grid-template-rows: 20% 80%;
         }
         
         .greeting-heading h1,.greeting-heading h2 {
@@ -153,6 +155,7 @@
         .quality {
             width: 175px;
             height: 175px;
+            font-size: 1.5rem;
         }
 
         .quality:hover {
@@ -164,7 +167,7 @@
                 
         .quality article {
             font-weight: bold;
-            font-size: 1.2rem;
+            font-size: 1.1rem;
         }
 
         .qualities-container {
@@ -195,13 +198,11 @@
             align-items: center;
         }
 
-        @media (max-width: 400px){
-            .greeting-heading h1{
-                font-size: 3rem;
-            }
-            .greeting-heading h2{
-                font-size: 1.5rem;
-            }
+        @media (max-width: 300px){
+            .greeting-heading h1 {
+                    font-size: 4rem;
+                }
         }
+
     }
 /* } */
