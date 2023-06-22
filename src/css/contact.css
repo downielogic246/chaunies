@@ -1,66 +1,229 @@
 .contact-container {
     background-color: var(--firstSection-background-color);
     width: 100%;
-    height: 88vh;
-    color: white;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact-title{
+    padding: 10px;
+        font-size: 75px;
+        font-family: 'Lobster', cursive;
+        text-transform: capitalize;
 }
 
-.socialMedia-container {
-    display: block;
+.screen-outer {
+    /* display: flex; */
     position: relative;
-    width: 25%;
-    height: 75%;
-    background-color: #4ba51a;
-    left: 37.5%;
-    right: 37.5%;
-    top: 12.5%;
-    bottom: 12.5%;
-    border-radius: 10px;
+    width: 350px;
+    height:500px;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid black;    
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
 }
 
+.screen-inner{
+    background-color: #ffbe45;
+    position: relative;
+    height: 97%;
+    width: 90%;
+    border-top-left-radius: 40px;
+        border-top-right-radius: 40px;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-top: 0;
+}
+
+.notch{
+    background-color: rgb(12, 12, 12);
+    width: 60%;
+    height: 20px;
+    border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+        position: relative;
+        top: 0;
+}
+.speaker{
+    width: 60px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: grey;
+        position: absolute;
+        top: 5px;
+        right: 65px;
+}
+
+.camera{
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: grey;
+    position: absolute;
+    top: 3px;
+    right: 40px;
+}
 .socialMedia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
     width: 100%;
-    height: 20%;
-    text-align: center;
+    height: 100%;
+    /* background-color: blue; */
 }
 
-.socialMedia li {
+ .socialMedia li {
     list-style-type: none;
-    display: inline-block;
-    width: 30%;
-    color: white;
-    text-transform: capitalize;
-    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    color: aliceblue;
+    border: 2px solid aliceblue;
+    border-radius: 50px;
+    text-transform: none;
 }
 
 .socialMedia li a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    vertical-align: middle;
-    text-align: center;
-    padding: 20px;
-    font-size: 50px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 25px;
     text-decoration: none;
     color: white;
 }
-
-.other-container {
-    width: 100%;
-    height: 40%;
-    margin-top: 20%;
+.socialMedia li a:hover {
+   background-color: rgba(240, 248, 255, 0.222);
+}
+.socialMedia li a h2 {
     text-align: center;
-    font-size: 23px;
+    font-size: 17px;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
-.other-container a {
-    color: white;
+[class*='vol-'], .power{
+    width: 5px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
 }
 
-.outro {
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: bold;
-    font-size: 30px;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+.vol-up{
+    top: 100px;
+    right: 265px ;
+}
+.vol-down{
+    top: 170px;
+    right: 265px ;
+}
+.power{
+    top: 140px;
+    left: 265px;
+}
+@media (max-width: 491px) {
+
+    .contact-title {
+        font-size: 50px;
+    }
+                .vol-up {
+                    top: 100px;
+                    right: 265px;
+                }
+        
+                .vol-down {
+                    top: 170px;
+                    right: 265px;
+                }
+        
+                .power {
+                    top: 140px;
+                    left: 267px;
+                }
+}
+
+@media (max-width:374px) {
+    .screen-outer{
+        width: 300px;
+        height: 400px;
+    }
+        .socialMedia li a h2 {
+            text-align: center;
+            font-size: 14px;
+        }
+                .vol-up {
+                    top: 100px;
+                    right: 225px;
+                }
+        
+                .vol-down {
+                    top: 170px;
+                    right: 225px;
+                }
+        
+                .power {
+                    top: 140px;
+                    left: 227px;
+                }
+                
+    
+}
+@media (max-width:325px) {
+    .screen-outer{
+        width: 250px;
+        height: 350px;
+    }
+    
+    .socialMedia li a h2 {
+        font-size: 12px;
+    }
+                
+    .speaker {
+        width: 50px;
+        height: 8px;
+        border-radius: 100px;
+        background-color: grey;
+        position: absolute;
+        top: 5px;
+        right: 45px;
+    }
+    
+    .camera {
+        right: 30px;
+        top: 3px;
+    }
+        .vol-up {
+            top: 100px;
+            right: 187px;
+        }
+    
+        .vol-down {
+            top: 170px;
+            right: 187px;
+        }
+    
+        .power {
+            top: 140px;
+            left: 188px;
+        }
+    
+}
+
+@media (min-height: 1266px) {
+    .contact-container{
+        height: 88vh;
+    }
 }

@@ -1,22 +1,16 @@
 import React, { useRef, useState } from "react";
-import TopBtn from "../components/TopBtn";
-import Cheese from "../components/Designs/Cheese";
-import Footer from "../components/Footer";
-
 const items = [
   {
     id: 0,
     photo: "",
     name: "8oz Cheespaste",
     price: 10.5,
-    desc: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem similique eaque, aut vitae, temporibus sapiente maiores eum eveniet autem nemo illo, quis ab maxime!",
   },
   {
     id: 1,
     photo: "",
     name: "16oz Cheesepaste",
     price: 18.5,
-    // desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam dolorem similique eaque, aut vitae, temporibus sapiente maiores eum eveniet autem nemo illo, quis ab maxime!",
   },
 ];
 

@@ -9,8 +9,8 @@
 }
 
 :root {
-    --nav-height: 12vh;
-    --main-height: 88vh;
+    --nav-height: 13vh;
+    --main-height: 87vh;
     --themeColor-background-image: linear-gradient(to right, rgb(255, 190, 69), red);
     --firstSection-background-color: rgba(26, 25, 25, 0.705);
 }
