@@ -19,13 +19,16 @@ const Contact = () => {
               </div>
               <ul className="socialMedia">
                 <li>
-                  <a href="https://instagram.com/chaunies246?igshid=MTg0ZDhmNDA=">
+                  <a
+                    href="https://instagram.com/chaunies246?igshid=MTg0ZDhmNDA="
+                    target="_blank"
+                  >
                     <i className="fa-brands fa-instagram"></i>
                     <h2>Instagram</h2>
                   </a>
                 </li>
                 <li>
-                  <a href="wa.link/9mc4s6">
+                  <a href="wa.link/9mc4s6" target="_blank">
                     <i className="fa-brands fa-whatsapp"></i>
                     <h2>Whatsapp</h2>
                   </a>

@@ -65,6 +65,7 @@ const Footer = () => {
                   <a
                     title="Instagram"
                     href="https://instagram.com/chaunies246?igshid=MTg0ZDhmNDA="
+                    target="_blank"
                   >
                     <i className="fa-brands fa-instagram"></i>
                   </a>
