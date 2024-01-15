@@ -1,4 +1,4 @@
-.main-area {
+/* .main-area {
     background-color: var(--firstSection-background-color);
     width: 100%;
     display: flex;
@@ -7,14 +7,14 @@
     flex-direction: column;
     text-align: center;
     color: white;
-}
+} */
 
 .about-title {
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
-    font-size: 3rem;
+    font-size: 75px;
     color: white;
     grid-area: title;
     width: 100%;

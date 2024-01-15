@@ -8,11 +8,25 @@
     scroll-behavior: smooth;
 }
 
+main{
+    background-image: url(/Photos/ingredients.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+}
+
 :root {
+    --white: #f0f8ff;
+    --red: #d90101;
+    --orange: #fcb228;
+    --yellow: #fbe756;
+    --green: #bcf994;
+    --bg-black: #1a1919b4;
     --nav-height: 13vh;
     --main-height: 87vh;
-    --themeColor-background-image: linear-gradient(to right, rgb(255, 190, 69), red);
-    --firstSection-background-color: rgba(26, 25, 25, 0.705);
+    --themeColor-background-image: linear-gradient(to right, var(--orange), var(--red));
+    --firstSection-background-color: #1a1919b4;
 }
 
 
@@ -28,21 +42,10 @@
 .other-area{
     width: 100%;
     height: 100vh;
-    background: var(--themeColor-background-image);
+    background: var(--bg-black);
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-
-
-/* BODY */
-body {
-    background-image: url(/Photos/ingredients.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
+    align-items: center;   
 }
 
 /* POP UP */
@@ -69,12 +72,34 @@ body {
     text-align: center;
     border-radius: 10px;
     padding: 20px;
+    color: var(--white);
 }
 
 .buttonHolder h1,
 article,
 p {
     padding: 5%;
+    width: 100%;
+}
+
+.buttonHolder h1{
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 40px;
+}
+
+.buttonHolder article{
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 25px;
+}
+.buttonHolder p{
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-size: 40px;
+    font-weight: bold;
 }
 
 button {
@@ -86,7 +111,23 @@ button {
     font-size: 15px;
     text-transform: capitalize;
 }
+.closeBtn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    border: none;
+    font-size: 50px;
+    color: white;
+}
 
+.toOrderServices {
+    border: solid 3px var(--white);
+    padding: 7px 15px;
+    border-radius: 10px;
+    color: var(--white);
+    font-weight: bold;
+    font-size: 25px;
+}
 .no-show {
     display: none;
 }

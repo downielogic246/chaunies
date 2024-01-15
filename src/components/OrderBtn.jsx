@@ -9,9 +9,9 @@ const OrderBtn = () => {
   //     setBtnAnimate("");
   //   };
   return (
-    <div className="orderbtn-container fa-beat-fade">
+    <div className="orderbtn-container ">
       <Link to="/chaunies.io/order" className="orderbtn ">
-        order now
+        order <i className="fa-solid fa-cart-shopping"></i>
       </Link>
     </div>
   );

@@ -8,51 +8,58 @@
 }
 
 .orderbtn-container{
-    width: max-content;
-    padding: 5px 20px;
+    width: 100%;
     height: max-content;
-    border-radius: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center ;
-    background: rgb(255, 239, 0);
-        background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(253, 251, 50, 1) 50%, rgba(254, 255, 122, 1) 100%);
-    color: black;
-    box-shadow: 0 0 2px rgba(254, 255, 122, 1);
+    background: none;
+    /* background: rgb(255, 239, 0);
+    background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(253, 251, 50, 1) 50%, rgba(254, 255, 122, 1) 100%); */
+    /* color: black; */
+    
     position: relative;
-    bottom: 25%;
-    transition: box-shadow 3s cubic-bezier(0.23, 1, 0.320, 1);
+    /* bottom: 25%; */
+    transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
 .orderbtn{
-    font-size: 3rem;
+    font-size: 40px;
     font-weight: bold;
-    font-family: 'Oi', cursive;
+    font-family: 'Roboto Slab',serif;
     text-decoration: none;
     padding: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color: black;
+    color: var(--orange);
     transition-property: all;
     transition-duration: 1s;
     transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+    border: 10px solid var(--orange);border-radius: 50px;
+    box-shadow: 0 0 2px rgba(254, 255, 122, 1);
+    margin-top: 30px;
+    margin-left: 70px;
     /* tra */
 }
+
+
 
 /* .orderbtn:hover, .orderbtn-container i:hover{
     font-size: 3.5rem;
     color: rgba(33, 33, 33, 0.623);
 } */
 
-.orderbtn-container:hover{
+.orderbtn:hover{
+    color: var(--white);
     box-shadow: 0 0 10px rgba(254, 255, 122, 1);
+    background-color: var(--orange);
 }
 
 .orderbtn-container i{
-    padding: 20px;
-    font-size: 3rem;
+    padding: 10px;
+    font-size: 40px;
 }
 
 /* @media (orientation: landscape) { */
@@ -63,11 +70,11 @@
         }
     }
     @media (max-width: 1004px){
-        .orderbtn-container{
+        /* .orderbtn-container{
             height: 90%;
             padding: 8px;
             bottom: 0;
-        }
+        } */
     }
     /* @media (max-width:979px) {
         .orderbtn-container{

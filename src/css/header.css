@@ -1,22 +1,30 @@
 /* Header Styling */
 header {
-    display: block;
-    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100vw;
     max-width: 100%;
-    height: max-content;
-    background-image: var(--themeColor-background-image);
-    box-shadow: 0px 0px 1.75px black;
+    height: 300px;
+    box-shadow: 0px 0px 1.75px black;background-color: var(--white);
 }
 
 .big-head{
-    display: block;
+    display: flex;
 }
 
 .small-head{
     display: none;
 }
 
+#logo {
+    position: relative;
+    background-image: url(/Photos/logoImg.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 150px;
+}
 .header-container {
     display: flex;
     position: relative;
@@ -24,6 +32,7 @@ header {
     height: var(--nav-height);
     justify-content: center;
     align-items: center;
+    
 }
 
 /* Navigation Links Styling */
@@ -56,28 +65,30 @@ header {
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    color: white;
+    color: var(--orange);
 }
 
-#logo {
-    position: absolute;
-    top: 30%;
-    left: 2%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/Photos/chaunies_nav.png);
-    background-size: contain;
+[class*='-line']{
+    width: 200px;
+    height: 100px;
+    background-size: cover;
     background-repeat: no-repeat;
-    width: 150px;
-    height: 30px;
-    
-    /* height: fit-content; */
-    /* height: max-content; */
 }
+
+.right-line{
+    background-image: url(/Photos/right_line.png);
+}
+
+.left-line{
+    background-image: url(/Photos/left_line.png);
+}
+
 
 .links:hover {
-    background-color: rgba(128, 128, 128, 0.291);
+    color: var(--red);
+    background-image: url(/Photos/smuge.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .menubtn-container{

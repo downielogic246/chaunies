@@ -14,17 +14,85 @@ const items = [
   },
 ];
 
+// const reducer = (state, action) => {
+//   if (action.type === "NAME") {
+//     return {
+//       left: 0,
+//       top: 0,
+//       fontSize: "16px",
+//       focus: true,
+//     };
+//   }
+
+//   return state;
+// };
+
 const Order = () => {
+  // const initialState = {
+  //   left: "50px",
+  //   top: "55px",
+  //   fontSize: "20px",
+  //   focus: false,
+  // };
+
+  // const [state, dispatch] = React.useReducer(reducer, initialState);
+
   const delivery = useRef();
+
+  const nameIn = React.useRef();
+  const teleIn = React.useRef();
+
+  const [styles, setStyles] = React.useState({
+    left: "50px",
+    top: "55px",
+    fontSize: "20px",
+  });
+
+  const [view, setView] = React.useState(false);
+
+  const [name, setName] = React.useState("");
+  const [phone, setPhone] = React.useState("");
+  // const [name, setName] = React.useState(undefined)
+
   const [mode, setMode] = useState("none");
   const handleChangeOfMode = (e) => {
-    // console.log(e);
-    // console.log(delivery.current.value);
     let choice = delivery.current.value;
 
     setMode(choice === "Delivery" ? "block" : "none");
-    // console.log(mode);
   };
+
+  React.useEffect(() => {
+    setStyles(
+      view === false
+        ? {
+            left: "50px",
+            top: "65px",
+            fontSize: "20px",
+          }
+        : {
+            left: 0,
+            top: 0,
+            fontSize: "18px",
+          }
+    );
+
+    // }
+  }, [name, phone]);
+
+  const handleOnChange = (e) => {
+    // console.log(e.target.value);
+    // setName();
+    if (e.target.id === "name") {
+      setName(e.target.value);
+    }
+
+    if (e.target.id === "tele") {
+      setPhone(e.target.value);
+    }
+  };
+  // React.useEffect(() => {
+  //   setView(!view);
+  // }, [styles]);
 
   return (
     <>
@@ -49,24 +117,78 @@ const Order = () => {
                   Customer Information
                 </legend>
                 {/* <!-- Customer Name --> */}
+                <div
+                  className="input"
+                  style={styles}
+                  onClick={() => {
+                    // if (name === "") {
+                    setView();
+                    // } else {
+                    // setView(true);
+                    // }
+                    nameIn.current.focus();
+                    // if (view === true) {
+                    //   nameIn.current.autoFocus = false;
+                    // } else {
+                    //   // nameIn.current.unfocus();
+                    //   nameIn.current.focus();
+                    // }
+                    if (view === false) {
+                    }
+                    // dispatch({ type: "NAME" });
+                    // console.log(nameIn);
+                  }}
+                >
+                  Full Name
+                </div>
                 <input
+                  value={name}
+                  onChange={(e) => {
+                    handleOnChange(e);
+                  }}
                   type="text"
                   name="Customer Name"
                   id="name"
-                  placeholder="Full Name"
-                  required
+                  ref={nameIn}
+                  required={name === "" ? true : false}
+                  autoFocus={view}
+                  onBlur={() => {
+                    setView(name === undefined ? false : true);
+                    // setView(false);
+                  }}
                 />
+
                 <br />
                 {/* <!-- End of customer name --> */}
 
                 {/* <!-- Customer Number --> */}
+                <div
+                  className="input"
+                  style={styles}
+                  onClick={() => {
+                    if (phone === "") {
+                      setView(!view);
+                    } else {
+                      setView(true);
+                    }
+                    teleIn.current.focus();
+                  }}
+                >
+                  Contact Number
+                </div>
                 <input
+                  value={phone}
+                  onChange={(e) => {
+                    handleOnChange(e);
+                  }}
+                  ref={teleIn}
                   type="text"
                   name="Customer Contact"
                   id="tele"
-                  placeholder="Contact Number"
+                  // placeholder=
                   required
                 />
+
                 {/* <!-- End of customer number --> */}
 
                 {/* <!-- Delivery --> */}
@@ -142,7 +264,7 @@ const Order = () => {
               </fieldset>
               {/* <!-- Submit button --> */}
               <button id="check" type="submit">
-                submit order
+                submit order <i class="fa-solid fa-circle-check"></i>
               </button>
             </form>
           </div>
