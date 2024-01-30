@@ -36,7 +36,8 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   word-spacing: 1px;
-  color: var(--orange);
+  color: var(--white) !important;
+  background-color: var(--orange);
   transition-property: all;
   transition-duration: 1s;
   transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
@@ -53,9 +54,9 @@
 } */
 
 .orderbtn:hover {
-  color: var(--white);
+  color: var(--orange) !important;
   box-shadow: 0 0 10px rgba(254, 255, 122, 1);
-  background-color: var(--orange);
+  background-color: var(--white);
 }
 
 .orderbtn:active {
@@ -99,9 +100,9 @@
   }
 }
 @media (max-width: 1190px) {
-  .orderbtn {
+  /* .orderbtn {
     display: none;
-  }
+  } */
 }
 @media (max-width: 1004px) {
   /* .orderbtn-container{

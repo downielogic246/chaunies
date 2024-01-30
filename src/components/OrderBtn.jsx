@@ -11,7 +11,7 @@ const OrderBtn = ({ orderStyle }) => {
   return (
     <div className="orderbtn-container " style={{ display: orderStyle }}>
       <Link to="/chaunies.io/order" className="orderbtn ">
-        order now<i className="fa-solid fa-cart-shopping"></i>
+        order<i className="fa-solid fa-cart-shopping"></i>
       </Link>
     </div>
   );
