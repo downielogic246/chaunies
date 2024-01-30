@@ -1,93 +1,127 @@
 @keyframes zoomFont {
-    from{
-        font-size: 3rem;
-    }
-    to{
-        font-size: 4rem;
-    }
+  from {
+    font-size: 3rem;
+  }
+  to {
+    font-size: 4rem;
+  }
 }
 
-.orderbtn-container{
-    width: 100%;
-    height: max-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center ;
-    background: none;
-    /* background: rgb(255, 239, 0);
+.orderbtn-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  /* background: rgb(255, 239, 0);
     background: linear-gradient(90deg, rgba(255, 239, 0, 1) 0%, rgba(253, 251, 50, 1) 50%, rgba(254, 255, 122, 1) 100%); */
-    /* color: black; */
-    
-    position: relative;
-    /* bottom: 25%; */
-    transition: all 1s cubic-bezier(0.23, 1, 0.320, 1);
+  /* color: black; */
+
+  position: relative;
+  /* bottom: 25%; */
+  transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.orderbtn{
-    font-size: 40px;
-    font-weight: bold;
-    font-family: 'Roboto Slab',serif;
-    text-decoration: none;
-    padding: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    word-spacing: 2px;
-    color: var(--orange);
-    transition-property: all;
-    transition-duration: 1s;
-    transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
-    border: 10px solid var(--orange);border-radius: 50px;
-    box-shadow: 0 0 2px rgba(254, 255, 122, 1);
-    margin-top: 30px;
-    margin-left: 70px;
-    /* tra */
+.orderbtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  word-spacing: 1px;
+  color: var(--orange);
+  transition-property: all;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+  border: 5px solid var(--orange);
+  border-radius: 50px;
+  box-shadow: 0 0 2px rgba(254, 255, 122, 1);
+  margin: 3px;
+  /* tra */
 }
-
-
 
 /* .orderbtn:hover, .orderbtn-container i:hover{
     font-size: 3.5rem;
     color: rgba(33, 33, 33, 0.623);
 } */
 
-.orderbtn:hover{
-    color: var(--white);
-    box-shadow: 0 0 10px rgba(254, 255, 122, 1);
-    background-color: var(--orange);
+.orderbtn:hover {
+  color: var(--white);
+  box-shadow: 0 0 10px rgba(254, 255, 122, 1);
+  background-color: var(--orange);
 }
 
-.orderbtn-container i{
-    padding: 10px;
-    font-size: 40px;
+.orderbtn:active {
+  background-color: #b62f25;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.295);
+}
+
+.orderbtn-container i {
+  padding: 10px;
+  font-size: 40px;
 }
 
 /* @media (orientation: landscape) { */
-    @media (max-width:1238px) {
-        .orderbtn{
-            font-size: 2rem;
-            padding: 15px;
-        }
-    }
-    @media (max-width: 1004px){
-        /* .orderbtn-container{
+@media (max-width: 1580px) {
+  .orderbtn-container i {
+    padding: 10px;
+    font-size: 20px;
+  }
+
+  .orderbtn {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto Slab", serif;
+    text-decoration: none;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    color: var(--orange);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+    border: 5px solid var(--orange);
+    border-radius: 50px;
+    box-shadow: 0 0 2px rgba(254, 255, 122, 1);
+    margin: 3px;
+  }
+}
+@media (max-width: 1190px) {
+  .orderbtn {
+    display: none;
+  }
+}
+@media (max-width: 1004px) {
+  /* .orderbtn-container{
             height: 90%;
             padding: 8px;
             bottom: 0;
         } */
-    }
-    /* @media (max-width:979px) {
+}
+/* @media (max-width:979px) {
         .orderbtn-container{
              padding: 2px;
         }
     } */
-    @media (max-width:865px) {
-        /* .orderbtn-container{
+@media (max-width: 865px) {
+  /* .orderbtn-container{
             padding: 0;
         } */
-        .orderbtn{
-            font-size: 1.75rem;
-            padding: 10px;
-        }
-    }
+  .orderbtn {
+    font-size: 1.75rem;
+    padding: 10px;
+  }
+}
 /* } */

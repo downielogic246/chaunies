@@ -1,6 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link, useActionData } from "react-router-dom";
 import OrderBtn from "../components/OrderBtn";
+import About from "./About";
 
 const slideDisplayables = [
   {
@@ -26,6 +27,12 @@ const slideDisplayables = [
 const Home = () => {
   const mainArea = useRef();
   const why = useRef();
+  const quickOrder = useRef();
+  const quickOrderHeading = useRef();
+  const [quickOrderBtn, setQuickOrderBtnStyle] = React.useState("flex");
+
+  // const [toggleHeight, setToggleHeight] = React.useState("max-content");
+  const [displayQuickOrder, setDisplayQuickOrder] = React.useState("flex");
 
   const [animateHome, setAnimateHome] = useState("qualities-container");
 
@@ -36,13 +43,11 @@ const Home = () => {
   });
 
   const slideLeft = () => {
-    console.log("left");
     let x = slide;
     x -= 1;
     setSlide(x < 0 ? slideDisplayables.length - 1 : x);
   };
   const slideRight = () => {
-    console.log("right");
     let x = slide;
     x += 1;
     setSlide(x > slideDisplayables.length - 1 ? 0 : x);
@@ -56,6 +61,132 @@ const Home = () => {
       : scrollTo(0, 0);
   };
 
+  const closeQuickOrder = () => {
+    setDisplayQuickOrder("none");
+  };
+
+  // window.addEventListener("resize", () => {
+  //   setDisplayQuickOrder(window.screen.width <= 1190 ? "none" : "flex");
+  // });
+
+  const QuickOrder = () => {
+    return (
+      <div
+        className="quick-order"
+        style={{
+          display: displayQuickOrder,
+        }}
+      >
+        <button
+          onClick={() => closeQuickOrder()}
+          className="no-order"
+          ref={quickOrder}
+        >
+          <i className="fa fa-times"></i>
+        </button>
+        <h2 ref={quickOrderHeading}>Try it now</h2>
+        <OrderBtn orderStyle={quickOrderBtn} />
+      </div>
+    );
+  };
+
+  const SlideHome = () => {
+    return (
+      <div className="greeting-slideContainer">
+        <button className="slide-left" onClick={() => slideLeft()}>
+          <i className="fa-solid fa-chevron-left"></i>
+        </button>
+        <div className="greeting-slide">
+          <h3 className="slide-heading">{slideDisplayables[slide].heading}</h3>
+          <article className="slide-desc">
+            {slideDisplayables[slide].desc}
+          </article>
+
+          {/* <a href={slide.link} className="learn-more">
+                learn more
+              </a> */}
+          <Link
+            className={"learn-more " + slideDisplayables[slide].id}
+            to={slideDisplayables[slide].link}
+            onClick={(e) => {
+              locationCheck(e);
+            }}
+          >
+            learn more
+          </Link>
+        </div>
+        <button className="slide-right" onClick={() => slideRight()}>
+          <i className="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    );
+  };
+
+  const Qualities = () => {
+    return (
+      <div className={"qualities-container " + animateHome}>
+        <div className="quality">
+          <div className="symbol-container">
+            <i className="fa-solid fa-truck"></i>
+          </div>
+          <div className="symbol-desc">
+            <h3 className="third-heading">Fast Delivery</h3>
+            <article>
+              Chaunies is known for its swift and reliable delivery services.
+              Whether it's a last-minute gift or an urgent business requirement,
+              Chaunies exceeds expectations by providing efficient and
+              dependable delivery. We're commitment to customer satisfaction has
+              positioned them as a leader in the industry, making us the go-to
+              choice for those who prioritize fast and reliable services.
+            </article>
+          </div>
+        </div>
+        {/* <div className="quality">
+            <div className="symbol-container">
+              <i className="fa-regular fa-face-grin-tongue-squint"></i>
+            </div>
+            <div className="symbol-desc">
+              <h3 className="third-heading">Taste</h3>
+              <article>Quality taste</article>
+            </div>
+          </div> */}
+        <div className="quality">
+          <div className="symbol-container">
+            <i className="fa-solid fa-fingerprint"></i>
+          </div>
+          <div className="symbol-desc">
+            <h3 className="third-heading">Chaunie's Touch</h3>
+            <article>
+              Chaunies stands out with its distinctive and captivating taste
+              profiles. Committed to culinary innovation, the business infuses
+              its products with a unique blend of locally bought ingredients
+              that emphasizes the idea of "Bajan Cheespaste". From savory to
+              delicious, our cheesepaste is a testament to our dedication to
+              offering a taste experience that transcends the ordinary.
+            </article>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const WhyUsSection = () => {
+    return (
+      <section className="other-area" id="why">
+        <About />
+        <div className="heading-why" ref={why}>
+          why us?
+        </div>
+        <Qualities />
+
+        <article className={"chaunies-desc " + animateHome}>
+          Place an order to TODAY!
+        </article>
+        <div className="design-outterCircle"></div>
+        <div className="design-innerCircle"></div>
+      </section>
+    );
+  };
   return (
     <main>
       {/* <!-- Main Content --> */}
@@ -63,70 +194,12 @@ const Home = () => {
         {/* <!-- Greeting Section --> */}
 
         <div className="greeting-container">
-          <div className="greeting-heading">
-            <h2>
-              Welcome to Chaunie's. Interested in our paste? <br />
-              Click the link below
-            </h2>
-            <OrderBtn />
-          </div>
-          <div className="greeting-slideContainer">
-            <button className="slide-left" onClick={() => slideLeft()}>
-              <i className="fa-solid fa-chevron-left"></i>
-            </button>
-            <div className="greeting-slide">
-              <h3 className="slide-heading">
-                {slideDisplayables[slide].heading}
-              </h3>
-              <article className="slide-desc">
-                {slideDisplayables[slide].desc}
-              </article>
-
-              {/* <a href={slide.link} className="learn-more">
-                learn more
-              </a> */}
-              <Link
-                className={"learn-more " + slideDisplayables[slide].id}
-                to={slideDisplayables[slide].link}
-                onClick={(e) => {
-                  locationCheck(e);
-                }}
-              >
-                learn more
-              </Link>
-            </div>
-            <button className="slide-right" onClick={() => slideRight()}>
-              <i className="fa-solid fa-chevron-right"></i>
-            </button>
-          </div>
+          <QuickOrder />
+          <h1>Welcome to Chaunies</h1>
+          <SlideHome />
         </div>
       </section>
-      <section className="other-area" id="why" ref={why}>
-        <div className="heading-why">why us?</div>
-        <div className={"qualities-container " + animateHome}>
-          <div className="quality">
-            <h3 className="third-heading">Delivery</h3>
-            <i className="fa-solid fa-truck"></i>
-            <article>Fast delivery</article>
-          </div>
-          <div className="quality">
-            <h3 className="third-heading">Taste</h3>
-            <i className="fa-regular fa-face-grin-tongue-squint"></i>
-            <article>Quality taste</article>
-          </div>
-          <div className="quality">
-            <h3 className="third-heading">Unique</h3>
-            <i className="fa-solid fa-fingerprint"></i>
-            <article> Chaunie's touch</article>
-          </div>
-        </div>
-        <article className={"chaunies-desc " + animateHome}>
-          At Chaunie's our customers come first. We look out for you and your
-          interest.
-        </article>
-        <div className="design-outterCircle"></div>
-        <div className="design-innerCircle"></div>
-      </section>
+      <WhyUsSection />
     </main>
   );
 };

@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <>
       <article className="copyright">
-        Copyright &copy;2023. All rights reserved.
+        Copyright &copy;2024. All rights reserved.
       </article>
       <footer>
         <div title="logo" className="footer-logo"></div>
@@ -37,17 +37,6 @@ const Footer = () => {
                   to="/chaunies.io/order"
                 >
                   Place An Order
-                </Link>
-              </li>
-              <li className="footer-links">
-                <Link
-                  onClick={() => {
-                    handleLinkClick();
-                  }}
-                  className="footer-link"
-                  to="/chaunies.io/services"
-                >
-                  Services
                 </Link>
               </li>
             </div>
@@ -85,11 +74,22 @@ const Footer = () => {
                     handleLinkClick();
                   }}
                   className="footer-link"
+                  to="/chaunies.io/services"
+                >
+                  Services
+                </Link>
+              </li>
+              {/* <li className="footer-links">
+                <Link
+                  onClick={() => {
+                    handleLinkClick();
+                  }}
+                  className="footer-link"
                   to="/chaunies.io/about"
                 >
                   About
                 </Link>
-              </li>
+              </li> */}
               <li className="footer-links">
                 <Link
                   onClick={() => {

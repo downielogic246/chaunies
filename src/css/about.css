@@ -9,13 +9,15 @@
     color: white;
 } */
 
+
+
 .about-title {
+    color: var(--orange);
     display: flex;
     justify-content: center;
     align-items: center;
     text-transform: capitalize;
     font-size: 75px;
-    color: white;
     grid-area: title;
     width: 100%;
     font-family: 'Lobster', cursive;
@@ -24,12 +26,13 @@
 .ceo-name {
     text-transform: capitalize;
     font-style: italic;
-    font-weight: lighter;
+    font-weight: bold;
     padding: 20px 0;
 }
 
 .roles{
     font-size: 2.5rem;
+    text-align: center;
 }
 
 #ceo{
@@ -49,26 +52,34 @@
 }
 
 .about-container {
-    color: white;
+    color: var(--orange);
+    margin-top: 25px;
     width: 100%;
-    height: max-content;
+    height: 700px;
     display: grid;
     grid-template-areas: 'title title'
     'ceo write-up';
     grid-template-columns: 30% 70%;
     grid-template-rows: 15% 85%;
     text-transform: capitalize;
-    background-color: var(--firstSection-background-color);
     justify-content: center;
     align-items: center;
+    font-family: 'Roboto Slab', serif;
 }
 
 .mission{
     padding: 0;
     margin-bottom: 50px;
-    font-size: 1.5rem;
     text-transform: none;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+        font-weight: bold;
+        text-align: left;
+        line-height: 35px;
+        letter-spacing: 2px;
+        text-indent: 50px;
+        padding: 15px;
+        width: 80%;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
 }
 
 .about{
@@ -79,6 +90,17 @@
 padding: 10px;
 font-size: 1.25rem;
 text-transform: none;
+padding: 0;
+    margin-bottom: 50px;
+    text-transform: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: left;
+    line-height: 35px;
+    letter-spacing: 2px;
+    text-indent: 50px;
+    padding: 15px;
+    width: 80%;
 }
 
 .mission-container{

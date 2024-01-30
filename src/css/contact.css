@@ -1,5 +1,5 @@
 .contact-container {
-    background-color: var(--green);
+    background-color: var(--white);
     width: 100%;
     height: max-content;
     display: flex;
@@ -12,7 +12,7 @@
         font-size: 75px;
         font-family: 'Lobster', cursive;
         text-transform: capitalize;
-        color: var(--red);
+        color: var(--orange);
 }
 
 .chaunies-contact{
@@ -24,7 +24,7 @@
 }
 
 .contact-questions{
-    background: var(--white);
+    background-color: white;
     width: 600px;
     height: max-content;
     border-radius: 20px;
@@ -151,6 +151,7 @@
     font-size: 25px;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
 .socialMedia li a:hover {
    background-color: rgba(240, 248, 255, 0.222);

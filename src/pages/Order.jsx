@@ -116,12 +116,18 @@ const Order = () => {
                 <legend title="Customer Information">
                   Customer Information
                 </legend>
-                {/* <!-- Customer Name --> */}
+                s{/* <!-- Customer Name --> */}
                 <div
                   className="input"
                   style={styles}
+                  usus
                   onClick={() => {
                     // if (name === "") {
+                    if (view === false) {
+                      setView(true);
+                      if (name === "" && phone === "") {
+                      }
+                    }
                     setView();
                     // } else {
                     // setView(true);
@@ -157,10 +163,8 @@ const Order = () => {
                     // setView(false);
                   }}
                 />
-
                 <br />
                 {/* <!-- End of customer name --> */}
-
                 {/* <!-- Customer Number --> */}
                 <div
                   className="input"
@@ -188,9 +192,7 @@ const Order = () => {
                   // placeholder=
                   required
                 />
-
                 {/* <!-- End of customer number --> */}
-
                 {/* <!-- Delivery --> */}
                 <div className="delivery">
                   <label id="deliveryMode" htmlFor="pickUp">
