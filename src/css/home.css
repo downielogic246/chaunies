@@ -245,15 +245,18 @@
   font-weight: bold;
   text-align: center;
   font-family: "Roboto Slab", serif;
-  /* transform: translateY(100px) */
+  position: relative;
+
+  transform: translateY(100px);
 }
 .quality {
   color: var(--orange);
   display: grid;
   margin-top: 50px;
   grid-template-columns: 30% auto;
+  grid-template-rows: 100%;
   width: 70%;
-  height: 350px;
+  height: max-content;
   border-radius: 20px;
   font-size: 2rem;
   box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.24);
@@ -287,7 +290,7 @@
 }
 
 /* Home animations */
-@keyframes flyInFromDown {
+/* @keyframes flyInFromDown {
   from {
     transform: translateY(100px);
     opacity: 0;
@@ -297,7 +300,7 @@
     opacity: 1;
     visibility: visible;
   }
-}
+} */
 .flyIn {
   animation: flyInFromDown 3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s forwards;
 }
@@ -340,6 +343,17 @@
     font-size: 5rem;
     font-family: "Lemon", serif;
     word-spacing: 2px;
+  }
+
+  .quality {
+    /* overflow-y: hidden; */
+    height: 350px;
+  }
+
+  .symbol-desc article {
+    overflow-y: scroll;
+    height: 250px;
+    padding: 10px 0;
   }
 }
 
@@ -406,6 +420,17 @@
     height: 350px;
     width: 80%;
   } */
+  .quick-order {
+    flex-direction: row;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .no-order {
+    right: auto;
+    top: 8px;
+    left: 10px;
+  }
 }
 @media (max-width: 1004px) {
   .quick-order h1,
@@ -417,6 +442,30 @@
   }
 
   .quality {
+    width: 95%;
+  }
+  /* .quality {
+    grid-template-areas:
+      "icon title"
+      "p p";
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto;
+  }
+
+  .symbol-container {
+    grid-area: icon;
+    height: 100%;
+  }
+
+  .symbol-desc article {
+    grid-area: p;
+  }
+
+  .third-heading {
+    grid-area: title;
+  } */
+
+  /* .quality {
     width: 175px;
     height: 175px;
     font-size: 1.5rem;
@@ -440,11 +489,10 @@
     justify-content: space-evenly;
     align-items: center;
     /* background-color: white; */
-    width: 100%;
+  /* width: 100%;
     height: max-content;
     padding: 30px;
-    row-gap: 30px;
-  }
+    row-gap: 30px; */
 
   .chaunies-desc {
     font-size: 1.5rem;
@@ -463,6 +511,9 @@
   }
 
   @media (max-width: 714px) {
+    .greeting-container h1 {
+      font-size: 55px;
+    }
     .greeting-container {
       grid-template-areas:
         "title"
@@ -494,7 +545,7 @@
 
   @media (max-width: 593px) {
     .slide-desc {
-      font-size: 17px;
+      font-size: 18px;
     }
 
     .learn-more {
@@ -502,12 +553,31 @@
     }
 
     .slide-heading {
-      font-size: 30px;
+      font-size: 35px;
     }
 
     .greeting-slide {
       height: 375px;
       width: 70%;
+    }
+
+    .greeting-slideContainer {
+      width: 100%;
+    }
+
+    .symbol-container {
+      display: none;
+    }
+
+    .quality {
+      grid-template-columns: auto;
+      grid-template-rows: 20% auto;
+      padding: 20px;
+      height: max-content;
+    }
+
+    .symbol-desc article {
+      padding: 20px;
     }
   }
 
@@ -516,22 +586,27 @@
                 background: none;
                 color: var(--red);
             } */
+
     .slide-heading {
       margin: 0;
     }
     .slide-desc {
-      overflow-y: scroll;
+      /* overflow-y: scroll; */
       height: 200px;
+      font-size: 18px;
+      margin-bottom: 10px;
+      padding: 10px 0;
     }
 
     .greeting-slideContainer {
-      background-image: var(--themeColor-background-image);
+      height: 400px;
+      /* background-image: var(--themeColor-background-image); */
     }
 
     .slide-left,
     .slide-right {
-      color: var(--white);
-      font-size: 20px;
+      color: var(--orange);
+      font-size: 30px;
     }
 
     .greeting-slide {
@@ -539,11 +614,24 @@
       border: 0;
       background: none;
     }
+
+    .quick-order h2 {
+      display: none;
+    }
   }
 
   @media (max-width: 300px) {
     .quick-order h1 {
       font-size: 4rem;
+    }
+
+    .slide-desc {
+      font-size: 17px;
+    }
+
+    .greeting-slideContainer {
+      height: 500px;
+      /* background-image: var(--themeColor-background-image); */
     }
   }
 }

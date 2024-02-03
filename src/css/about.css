@@ -9,129 +9,141 @@
     color: white;
 } */
 
-
-
 .about-title {
-    color: var(--orange);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-transform: capitalize;
-    font-size: 75px;
-    grid-area: title;
-    width: 100%;
-    font-family: 'Lobster', cursive;
+  color: var(--orange);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  font-size: 75px;
+  grid-area: title;
+  width: 100%;
+  font-family: "Lobster", cursive;
 }
 
 .ceo-name {
-    text-transform: capitalize;
-    font-style: italic;
-    font-weight: bold;
-    padding: 20px 0;
+  text-transform: capitalize;
+  font-style: italic;
+  font-weight: bold;
+  padding: 20px 0;
 }
 
-.roles{
-    font-size: 2.5rem;
-    text-align: center;
+.roles {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
-#ceo{
-    background-image: url(/Photos/ceo.jpeg);
-    background-size: cover;
-    width: 200px;
-    height: 245px;
-    border-radius: 10px;
+#ceo {
+  background-image: url(/Photos/ceo.jpeg);
+  background-size: cover;
+  width: 200px;
+  height: 245px;
+  border-radius: 10px;
 }
 
-.leadership{
-    grid-area: ceo;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;height: max-content;
+.leadership {
+  grid-area: ceo;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
 }
 
 .about-container {
-    color: var(--orange);
-    margin-top: 25px;
+  color: var(--orange);
+  /* margin-top: 25px; */
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-areas:
+    "title title"
+    "ceo write-up";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 15% 85%;
+  text-transform: capitalize;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Slab", serif;
+}
+
+.mission {
+  padding: 0;
+  margin-bottom: 50px;
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 2px;
+  text-indent: 50px;
+  padding: 15px;
+  width: 80%;
+  /* font-family: Georgia, 'Times New Roman', Times, serif; */
+}
+
+.about {
+  grid-area: write-up;
+}
+
+.about-desc {
+  padding: 10px;
+  font-size: 1.25rem;
+  text-transform: none;
+  padding: 0;
+  margin-bottom: 50px;
+  text-transform: none;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 35px;
+  letter-spacing: 2px;
+  text-indent: 50px;
+  padding: 15px;
+  width: 80%;
+}
+
+.mission-container {
+  margin-top: -50px;
+}
+@media (max-width: 734px) {
+  .about-container {
+    grid-template-areas:
+      "title"
+      "write-up"
+      "ceo";
+    grid-template-columns: 100%;
+    grid-template-rows: max-content max-content max-content;
+    height: max-content;
+    padding: 0 20px;
+  }
+
+  .about-desc,
+  .mission {
     width: 100%;
-    height: 700px;
-    display: grid;
-    grid-template-areas: 'title title'
-    'ceo write-up';
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 15% 85%;
-    text-transform: capitalize;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Roboto Slab', serif;
-}
+  }
 
-.mission{
+  .roles {
     padding: 0;
-    margin-bottom: 50px;
-    text-transform: none;
-    font-size: 1.3rem;
-        font-weight: bold;
-        text-align: left;
-        line-height: 35px;
-        letter-spacing: 2px;
-        text-indent: 50px;
-        padding: 15px;
-        width: 80%;
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+  }
+
+  .about {
+    padding-top: 60px;
+  }
+
+  .leadership {
+    padding-bottom: 20px;
+  }
 }
-
-.about{
-    grid-area: write-up;
-}
-
-.about-desc{
-padding: 10px;
-font-size: 1.25rem;
-text-transform: none;
-padding: 0;
-    margin-bottom: 50px;
-    text-transform: none;
-    font-size: 1.3rem;
-    font-weight: bold;
-    text-align: left;
-    line-height: 35px;
-    letter-spacing: 2px;
-    text-indent: 50px;
-    padding: 15px;
-    width: 80%;
-}
-
-.mission-container{
-    margin-top: -50px;
-}
-@media (max-width: 734px){
-    .about-container{
-        grid-template-areas: 'title'
-        'write-up'
-        'ceo'
-        ;
-        grid-template-columns: 100%;
-        grid-template-rows: max-content max-content max-content;
-        height: max-content;
-    }
-
-    .roles{
-        padding: 0;
-    }
-
-    .about{
-        padding-top: 60px;
-    }
-
-    .leadership{
-        padding-bottom: 20px;
-    }
+@media (max-width: 491px) {
+  .about-title {
+    font-size: 50px;
+  }
 }
 
 @media (min-height: 1266px) {
-    .about-container {
-        height: 88vh;
-    }
+  .about-container {
+    height: 88vh;
+  }
 }
