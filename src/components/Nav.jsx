@@ -45,14 +45,18 @@ const Nav = () => {
               style={menuState}
             >
               <li className="nav-links">
-                <Link className="links" to="/" onClick={() => toggleMenu()}>
+                <Link
+                  className="links"
+                  to="/chaunies.io/"
+                  onClick={() => toggleMenu()}
+                >
                   Home
                 </Link>
               </li>
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/order"
+                  to="/chaunies.io/order"
                   onClick={() => toggleMenu()}
                 >
                   Place An Order
@@ -61,7 +65,7 @@ const Nav = () => {
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/services"
+                  to="/chaunies.io/services"
                   onClick={() => toggleMenu()}
                 >
                   Services
@@ -70,7 +74,7 @@ const Nav = () => {
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/contact"
+                  to="/chaunies.io/contact"
                   onClick={() => toggleMenu()}
                 >
                   Contact Us

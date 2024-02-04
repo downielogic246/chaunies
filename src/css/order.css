@@ -168,6 +168,13 @@ select {
   border-radius: 5px;
 }
 
+.oz_eight {
+  background-image: url(/Photos/80z-nobg.png);
+}
+
+.oz_sixteen {
+  background-image: url(/Photos/16oz-removebg-preview.png);
+}
 .price {
   font-size: 4rem;
   font-weight: bold;
