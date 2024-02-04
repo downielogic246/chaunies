@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 const items = [
   {
     id: 0,
-    photo: "",
+    photo: "../Photos/80z-nobg.png",
     name: "8oz Cheespaste",
     price: 10.5,
   },
   {
     id: 1,
-    photo: "",
+    photo: "../Photos/16oz-removebg-preview.png",
     name: "16oz Cheesepaste",
     price: 18.5,
   },

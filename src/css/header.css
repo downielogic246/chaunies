@@ -105,13 +105,13 @@ header {
   width: max-content;
   height: max-content;
   font-size: 2.5rem;
-  color: var(--red);
+  color: var(--green);
   border: 0;
   transition: font-size 100ms ease-in;
 }
 
 .menubtn:hover {
-  color: rgba(255, 255, 255, 0.505);
+  color: var(--red);
   font-size: 3rem;
 }
 
@@ -179,7 +179,8 @@ header {
       align-items: center;
       flex-direction: column;
       position: fixed;
-      background-image: var(--themeColor-background-image);
+      /* background-image: var(--themeColor-background-image); */
+      background-color: var(--yellow);
       z-index: 99;
       top: 0;
       right: 0;
@@ -192,6 +193,7 @@ header {
     }
     .links {
       font-size: 1.25rem;
+      color: var(--red);
     }
 
     .menubtn-container {
