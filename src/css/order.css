@@ -161,6 +161,8 @@ select {
 .itemPhoto {
   width: auto;
   height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
   /* max-width: 300px !important;
   max-height: 250px !important; */
   border-radius: 5px;

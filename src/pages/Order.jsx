@@ -2,13 +2,13 @@ import React, { useRef, useState } from "react";
 const items = [
   {
     id: 0,
-    photo: "../Photos/80z-nobg.png",
+    photo: "Photos/80z-nobg.png",
     name: "8oz Cheespaste",
     price: 10.5,
   },
   {
     id: 1,
-    photo: "../Photos/16oz-removebg-preview.png",
+    photo: "Photos/16oz-removebg-preview.png",
     name: "16oz Cheesepaste",
     price: 18.5,
   },
@@ -153,10 +153,19 @@ const Order = () => {
                     return (
                       <div className="item" key={item.id}>
                         <h2 className="itemName">{item.name}</h2>
-                        <img
-                          src={item.photo}
-                          alt={item.name}
+                        <div
                           className="itemPhoto"
+                          style={
+                            item.id === 0
+                              ? {
+                                  backgroundImage:
+                                    "url(../Photos/80z-nobg.png)",
+                                }
+                              : {
+                                  backgroundImage:
+                                    "url(../Photos/16oz-removebg-preview.png)",
+                                }
+                          }
                         />
                         <div className="description-container">
                           <p className="price">{"$" + item.price.toFixed(2)}</p>
