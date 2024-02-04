@@ -416,7 +416,7 @@
     align-items: center;
   }
   .greeting-slideContainer {
-    position: relative;
+    sposition: relative;
     height: max-content;
     justify-self: center;
     vertical-align: middle;
