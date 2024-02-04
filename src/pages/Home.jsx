@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import { Link, useActionData } from "react-router-dom";
 import OrderBtn from "../components/OrderBtn";
 import About from "./About";
+import Cheese from "../components/Designs/Cheese";
 
 const slideDisplayables = [
   {
@@ -194,8 +195,13 @@ const Home = () => {
         {/* <!-- Greeting Section --> */}
 
         <div className="greeting-container">
-          <QuickOrder />
-          <h1>Welcome to Chaunies</h1>
+          {/* <QuickOrder /> */}
+          <div className="enjoy-heading">
+            <article className="enjoy-desc">
+              Come enjoy our deliciously smooth cheesepaste
+            </article>
+            <OrderBtn />
+          </div>
           <SlideHome />
         </div>
       </section>
