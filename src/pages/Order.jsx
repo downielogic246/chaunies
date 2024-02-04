@@ -39,20 +39,8 @@ const Order = () => {
 
   const delivery = useRef();
 
-  const nameIn = React.useRef();
-  const teleIn = React.useRef();
-
-  const [styles, setStyles] = React.useState({
-    left: "50px",
-    top: "55px",
-    fontSize: "20px",
-  });
-
-  const [view, setView] = React.useState(false);
-
   const [name, setName] = React.useState("");
   const [phone, setPhone] = React.useState("");
-  // const [name, setName] = React.useState(undefined)
 
   const [mode, setMode] = useState("none");
   const handleChangeOfMode = (e) => {
@@ -61,27 +49,7 @@ const Order = () => {
     setMode(choice === "Delivery" ? "block" : "none");
   };
 
-  React.useEffect(() => {
-    setStyles(
-      view === false
-        ? {
-            left: "50px",
-            top: "65px",
-            fontSize: "20px",
-          }
-        : {
-            left: 0,
-            top: 0,
-            fontSize: "18px",
-          }
-    );
-
-    // }
-  }, [name, phone]);
-
   const handleOnChange = (e) => {
-    // console.log(e.target.value);
-    // setName();
     if (e.target.id === "name") {
       setName(e.target.value);
     }
@@ -90,10 +58,6 @@ const Order = () => {
       setPhone(e.target.value);
     }
   };
-  // React.useEffect(() => {
-  //   setView(!view);
-  // }, [styles]);
-
   return (
     <>
       {/* <!-- Main Area --> */}
@@ -117,36 +81,7 @@ const Order = () => {
                   Customer Information
                 </legend>
                 s{/* <!-- Customer Name --> */}
-                <div
-                  className="input"
-                  style={styles}
-                  usus
-                  onClick={() => {
-                    // if (name === "") {
-                    if (view === false) {
-                      setView(true);
-                      if (name === "" && phone === "") {
-                      }
-                    }
-                    setView();
-                    // } else {
-                    // setView(true);
-                    // }
-                    nameIn.current.focus();
-                    // if (view === true) {
-                    //   nameIn.current.autoFocus = false;
-                    // } else {
-                    //   // nameIn.current.unfocus();
-                    //   nameIn.current.focus();
-                    // }
-                    if (view === false) {
-                    }
-                    // dispatch({ type: "NAME" });
-                    // console.log(nameIn);
-                  }}
-                >
-                  Full Name
-                </div>
+                <div className="input">Full Name</div>
                 <input
                   value={name}
                   onChange={(e) => {
@@ -155,41 +90,21 @@ const Order = () => {
                   type="text"
                   name="Customer Name"
                   id="name"
-                  ref={nameIn}
-                  required={name === "" ? true : false}
-                  autoFocus={view}
-                  onBlur={() => {
-                    setView(name === undefined ? false : true);
-                    // setView(false);
-                  }}
+                  required
+                  autoFocus="true"
                 />
                 <br />
                 {/* <!-- End of customer name --> */}
                 {/* <!-- Customer Number --> */}
-                <div
-                  className="input"
-                  style={styles}
-                  onClick={() => {
-                    if (phone === "") {
-                      setView(!view);
-                    } else {
-                      setView(true);
-                    }
-                    teleIn.current.focus();
-                  }}
-                >
-                  Contact Number
-                </div>
+                <div className="input">Contact Number</div>
                 <input
                   value={phone}
                   onChange={(e) => {
                     handleOnChange(e);
                   }}
-                  ref={teleIn}
                   type="text"
                   name="Customer Contact"
                   id="tele"
-                  // placeholder=
                   required
                 />
                 {/* <!-- End of customer number --> */}

@@ -111,8 +111,8 @@
   .about-container {
     grid-template-areas:
       "title"
-      "write-up"
-      "ceo";
+      "ceo"
+      "write-up";
     grid-template-columns: 100%;
     grid-template-rows: max-content max-content max-content;
     height: max-content;
