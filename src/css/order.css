@@ -145,26 +145,21 @@ select {
   width: 75vw;
   display: grid;
   grid-template-areas: "auto auto";
+  justify-content: space-evenly;
   grid-template-rows: 50% 50%;
-  /* background-image: url(/Photos/background_order.jpg);
-  background-repeat: no-repeat;
-  background-size: cover; */
   background-color: var(--green);
 }
 
 .item {
   text-align: center;
-  grid-area: "auto";
   padding: 20px;
 }
 
 .itemPhoto {
-  width: auto;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   background-repeat: no-repeat;
   background-size: contain;
-  /* max-width: 300px !important;
-  max-height: 250px !important; */
   border-radius: 5px;
 }
 
@@ -230,6 +225,11 @@ select {
   font-family: "Copperplate Gothic Light";
   font-size: 25px;
   font-weight: bold;
+}
+
+#addy-info {
+  width: 80%;
+  left: 0;
 }
 
 @media (max-width: 1100px) {

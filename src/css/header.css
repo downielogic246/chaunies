@@ -85,9 +85,7 @@ header {
 
 .links:hover {
   color: var(--red);
-  background-image: url(/Photos/smuge.png);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-color: var(--green);
 }
 
 .menubtn-container {
