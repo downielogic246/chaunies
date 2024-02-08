@@ -9,7 +9,7 @@ import Order from "./pages/Order";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/Notfound";
+// import NotFound from "./pages/Notfound";
 
 const App = () => {
   const welcome = React.useRef();
@@ -64,7 +64,7 @@ const App = () => {
         <Route path="/chaunies.io/services" element={<Services />} />
         <Route path="/chaunies.io/about" element={<About />} />
         <Route path="/chaunies.io/contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
       <Footer />
     </>
