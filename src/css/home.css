@@ -438,8 +438,6 @@
   }
 }
 
-@media (max-height: 800px) {
-}
 @media (max-width: 1004px) {
   .quick-order h1,
   .quick-order h2 {
@@ -555,6 +553,24 @@
   }
 
   @media (max-width: 593px) {
+    .greeting-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: var(--main-height);
+      background-color: var(--firstSection-background-color);
+      color: var(--white);
+      text-align: center;
+      text-transform: capitalize;
+    }
+
+    .enjoy-heading {
+      height: 45%;
+    }
+    .greeting-slideContainer {
+      top: 0;
+    }
     .slide-desc {
       font-size: 18px;
     }
@@ -589,10 +605,9 @@
   }
 
   @media (max-width: 472px) {
-    /* .greeting-slide{
-                background: none;
-                color: var(--red);
-            } */
+    /* .greeting-slide {
+      height: 700px;
+    } */
 
     .slide-heading {
       margin: 0;

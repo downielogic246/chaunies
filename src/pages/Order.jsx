@@ -174,15 +174,16 @@ const Order = () => {
                     );
                   })}
                 </div>
+                <label htmlFor="addy-info">Additional Information</label>
+                <textarea
+                  name="Additional Information"
+                  id="addy-info"
+                  cols="30"
+                  rows="10"
+                  placeholder="Feel free to leave any specfic details, for example: Would you like regular, mild or hot? "
+                ></textarea>
               </fieldset>
-              <label htmlFor="addy-info">Additional Information</label>
-              <textarea
-                name="Additional Information"
-                id="addy-info"
-                cols="30"
-                rows="10"
-                placeholder="Feel free to leave any specfic details, for example: Would you like regular, mild or hot? "
-              ></textarea>
+
               {/* <!-- Submit button --> */}
               <button id="check" type="submit">
                 submit order <i class="fa-solid fa-circle-check"></i>
