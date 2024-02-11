@@ -9,26 +9,26 @@ import Order from "./pages/Order";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import NotFound from "./pages/Notfound";
+import NotFound from "./pages/NotFound";
 
 const App = () => {
-  const welcome = React.useRef();
-  const [show, setShow] = React.useState(() => {
-    const value = localStorage.getItem("show");
+  // const welcome = React.useRef();
+  // const [show, setShow] = React.useState(() => {
+  //   const value = localStorage.getItem("show");
 
-    return value === null ? "button-container" : localStorage.show;
-  });
-  React.useEffect(() => {
-    localStorage.setItem("show", show);
-  }, [show]);
+  //   return value === null ? "button-container" : localStorage.show;
+  // });
+  // React.useEffect(() => {
+  //   localStorage.setItem("show", show);
+  // }, [show]);
 
-  const handleClick = () => {
-    localStorage.setItem("show", "button-container no-show");
-    setShow(localStorage.show);
-  };
+  // const handleClick = () => {
+  //   localStorage.setItem("show", "button-container no-show");
+  //   setShow(localStorage.show);
+  // };
   return (
     <>
-      <div className={show} ref={welcome}>
+      {/* <div className={show} ref={welcome}>
         <div className="buttonHolder">
           <button
             className="closeBtn"
@@ -54,7 +54,7 @@ const App = () => {
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
           </Link>
         </div>
-      </div>
+      </div> */}
       <Nav />
       <Cheese />
       <TopBtn />
