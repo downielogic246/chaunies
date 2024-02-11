@@ -84,7 +84,7 @@ header {
 }
 
 .links:hover {
-  border-bottom: 3pc solid var(--green);
+  border-bottom: 3px solid var(--green);
   color: var(--green);
 }
 
