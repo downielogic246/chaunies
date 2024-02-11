@@ -80,7 +80,7 @@ const Order = () => {
                 <legend title="Customer Information">
                   Customer Information
                 </legend>
-                s{/* <!-- Customer Name --> */}
+                {/* <!-- Customer Name --> */}
                 <div className="input">Full Name</div>
                 <input
                   value={name}
