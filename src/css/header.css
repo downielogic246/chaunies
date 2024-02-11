@@ -84,8 +84,8 @@ header {
 }
 
 .links:hover {
-  color: var(--red);
-  background-color: var(--green);
+  border-bottom: 3pc solid var(--green);
+  color: var(--green);
 }
 
 .menubtn-container {
