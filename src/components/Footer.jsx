@@ -23,7 +23,7 @@ const Footer = () => {
                     handleLinkClick();
                   }}
                   className="footer-link"
-                  to="/chaunies.io/"
+                  to="/"
                 >
                   Home
                 </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
                     handleLinkClick();
                   }}
                   className="footer-link"
-                  to="/chaunies.io/order"
+                  to="/order"
                 >
                   Place An Order
                 </Link>
@@ -74,7 +74,7 @@ const Footer = () => {
                     handleLinkClick();
                   }}
                   className="footer-link"
-                  to="/chaunies.io/services"
+                  to="/services"
                 >
                   Services
                 </Link>
@@ -96,7 +96,7 @@ const Footer = () => {
                     handleLinkClick();
                   }}
                   className="footer-link"
-                  to="/chaunies.io/contact"
+                  to="/contact"
                 >
                   Contact Us
                 </Link>

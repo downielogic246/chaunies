@@ -22,7 +22,7 @@ import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="/chaunies.io">
+    <BrowserRouter basename="/chaunies">
       <App />
     </BrowserRouter>
   </React.StrictMode>

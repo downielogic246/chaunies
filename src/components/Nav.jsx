@@ -45,18 +45,14 @@ const Nav = () => {
               style={menuState}
             >
               <li className="nav-links">
-                <Link
-                  className="links"
-                  to="/chaunies.io/"
-                  onClick={() => toggleMenu()}
-                >
+                <Link className="links" to="/" onClick={() => toggleMenu()}>
                   Home
                 </Link>
               </li>
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/chaunies.io/order"
+                  to="/order"
                   onClick={() => toggleMenu()}
                 >
                   Place An Order
@@ -65,7 +61,7 @@ const Nav = () => {
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/chaunies.io/services"
+                  to="/services"
                   onClick={() => toggleMenu()}
                 >
                   Services
@@ -74,7 +70,7 @@ const Nav = () => {
               <li className="nav-links">
                 <Link
                   className="links"
-                  to="/chaunies.io/contact"
+                  to="/contact"
                   onClick={() => toggleMenu()}
                 >
                   Contact Us
@@ -117,27 +113,19 @@ const Nav = () => {
           <ul className="links-container">
             <div className="left-line"></div>
             <li className="nav-links">
-              <Link
-                className="links"
-                to="/chaunies.io/"
-                onClick={() => toggleMenu()}
-              >
+              <Link className="links" to="/" onClick={() => toggleMenu()}>
                 Home
               </Link>
             </li>
             <li className="nav-links">
-              <Link
-                className="links"
-                to="/chaunies.io/order"
-                onClick={() => toggleMenu()}
-              >
+              <Link className="links" to="/order" onClick={() => toggleMenu()}>
                 Place An Order
               </Link>
             </li>
             <li className="nav-links">
               <Link
                 className="links"
-                to="/chaunies.io/services"
+                to="/services"
                 onClick={() => toggleMenu()}
               >
                 Services
@@ -155,7 +143,7 @@ const Nav = () => {
             <li className="nav-links">
               <Link
                 className="links"
-                to="/chaunies.io/contact"
+                to="/contact"
                 onClick={() => toggleMenu()}
               >
                 Contact Us

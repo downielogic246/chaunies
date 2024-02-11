@@ -9,7 +9,7 @@ import Order from "./pages/Order";
 import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-// import NotFound from "./pages/Notfound";
+import NotFound from "./pages/Notfound";
 
 const App = () => {
   const welcome = React.useRef();
@@ -48,7 +48,7 @@ const App = () => {
           <Link
             className="toOrderServices"
             title="Order Now"
-            to="/chaunies.io/order"
+            to="/order"
             onClick={() => handleClick()}
           >
             <i className="fa fa-arrow-right" aria-hidden="true"></i>
@@ -59,12 +59,12 @@ const App = () => {
       <Cheese />
       <TopBtn />
       <Routes>
-        <Route path="/chaunies.io/" element={<Home />} />
-        <Route path="/chaunies.io/order" element={<Order />} />
-        <Route path="/chaunies.io/services" element={<Services />} />
-        <Route path="/chaunies.io/about" element={<About />} />
-        <Route path="/chaunies.io/contact" element={<Contact />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
+        <Route path="/" element={<Home />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </>

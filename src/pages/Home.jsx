@@ -9,19 +9,19 @@ const slideDisplayables = [
     id: "why",
     heading: "why us?",
     desc: "Why us you may ask. Chaunie's services and products are produced with qualities and standards that makes customers want more every time.",
-    link: "/chaunies.io/",
+    link: "/chaunies/",
   },
   {
     id: "who",
     heading: "who we cater?",
     desc: "Chaunie's caters to weddings, parties, corporate events and for any special events that you may require cheesepaste.",
-    link: "/chaunies.io/services",
+    link: "/chaunies/services",
   },
   {
     id: "how",
     heading: "how to contact?",
     desc: "Chaunie's is very easy to contact. Contact us via our socials, phonecall or email.",
-    link: "/chaunies.io/contact",
+    link: "/chaunies/contact",
   },
 ];
 
