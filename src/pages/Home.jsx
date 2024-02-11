@@ -181,7 +181,7 @@ const Home = () => {
         <Qualities />
 
         <article className={"chaunies-desc " + animateHome}>
-          Place an order to TODAY!
+          Place an order TODAY!
         </article>
         <div className="design-outterCircle"></div>
         <div className="design-innerCircle"></div>
