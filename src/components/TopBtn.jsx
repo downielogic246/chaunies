@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const TopBtn = () => {
-  const [showBtn, setShowBtn] = useState("none");
+  const [showBtn, setShowBtn] = useState(0);
 
   window.addEventListener("scroll", () => {
     let screenHeight = window.scrollY;
 
-    setShowBtn(screenHeight >= 250 ? "flex" : "none");
+    setShowBtn(screenHeight >= 250 ? 1 : 0);
   });
 
   return (
@@ -14,7 +14,7 @@ const TopBtn = () => {
       href="#"
       className="toTop"
       title="Back to top"
-      style={{ display: showBtn }}
+      style={{ opacity: showBtn }}
     >
       <i className="fa fa-arrow-up" aria-hidden="true"></i>
     </a>
